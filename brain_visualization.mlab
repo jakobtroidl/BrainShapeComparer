@@ -38,7 +38,7 @@ module vtkMINCImageReader {
 }
 module View2D {
   internal  {
-    frame = "93 -707 120 56"
+    frame = "-27 -699 120 56"
     moduleGroupName = ""
     windows  {
       window Settings {
@@ -47,7 +47,7 @@ module View2D {
         wasOpen = no
       }
       window _default {
-        geometry = "54 88 400 400"
+        geometry = "413 51 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -58,7 +58,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 177
+    startSlice = 183
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -282,12 +282,17 @@ module CalculateGradient {
 }
 module OrthoView2D {
   internal  {
-    frame = "429 -739 120 56"
+    frame = "109 -699 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "92 64 400 436"
-        sizeHint = "400 436"
+        geometry = "471 58 400 428"
+        sizeHint = "400 428"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "353 28 300 454"
+        sizeHint = "300 454"
         wasOpen = no
       }
     }
@@ -317,13 +322,13 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-0.923477172851563 -19.25 11.5357208251953"
+    worldPosition = "-0.25 -22.4285659790039 4.98213958740234"
     coloredMode = FALSE
   }
 }
 module OrthoView2D {
   internal  {
-    frame = "573 -739 120 56"
+    frame = "573 -691 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
@@ -350,27 +355,27 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1
-    grayCenter = 0.5
+    grayWidth = 4
+    grayCenter = 2
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-0.923477172851563 -15.75 15.2295989990234"
+    worldPosition = "0.839286804199219 -16.8928527832031 -19.25"
     coloredMode = FALSE
   }
 }
 module WEMIsoSurface {
   internal  {
-    frame = "-179 -707 152 72"
+    frame = "-243 -715 152 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "175 211 421 366"
-        sizeHint = "421 366"
+        geometry = "323 164 331 297"
+        sizeHint = "331 297"
         wasOpen = no
       }
     }
@@ -378,13 +383,13 @@ module WEMIsoSurface {
   fields  {
     instanceName = WEMIsoSurface
     id = 0
-    autoApply = TRUE
-    updateMode = AutoUpdate
+    autoApply = FALSE
+    updateMode = Off
     overwriteLabelDescription = FALSE
     label = ""
     description = ""
     shouldComputeNormals = TRUE
-    isoMinValue = 1
+    isoMinValue = 50
     isoMaxValue = 2000
     useMinValue = FALSE
     useMaxValue = TRUE
@@ -405,9 +410,16 @@ module WEMIsoSurface {
 }
 module SoWEMRenderer {
   internal  {
-    frame = "-119 -819 160 72"
+    frame = "-239 -819 160 72"
     moduleGroupName = ""
     showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "297 70 366 445"
+        sizeHint = "366 445"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = SoWEMRenderer
@@ -433,14 +445,14 @@ module SoWEMRenderer {
     faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
     faceAlphaValue = 1
     faceShininessValue = 1
-    primitiveValueLists = LUT
+    primitiveValueLists = ""
     selectedPrimitiveValueList = LUT
     selectedPrimitiveValueAlphaList = LUT
     primitiveValueListValid = TRUE
     primitiveValueListAlphaValid = TRUE
     overwriteAlphaWithPVL = FALSE
     wemPatchToRender = -1
-    maxWEMPatchIndex = 0
+    maxWEMPatchIndex = -1
     cachePatches = FALSE
     sendAdjacency = FALSE
     hitModifierKey = AllModifiersMask
@@ -449,7 +461,7 @@ module SoWEMRenderer {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "45 -915 136 56"
+    frame = "-235 -923 136 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
@@ -507,11 +519,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "255.237518310547 245.933837890625 -1.72625923156738"
-    orientation = "-0.313190370798111 -0.703217506408691 -0.638276517391205 3.72881674766541"
-    nearDistance = 244.12254
-    farDistance = 482.79193
-    focalDistance = 370.5209
+    position = "9.63711166381836 263.495391845703 -15.491024017334"
+    orientation = "-0.075236588716507 -0.762174248695374 -0.642985284328461 3.18595290184021"
+    nearDistance = 165.05914
+    farDistance = 389.98199
+    focalDistance = 264.28217
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -531,7 +543,7 @@ module SoExaminerViewer {
 }
 module WEMSave {
   internal  {
-    frame = "-451 -827 120 56"
+    frame = "-379 -811 120 56"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1407,7 +1419,7 @@ module CalculateGradient {
 }
 module Arithmetic {
   internal  {
-    frame = "273 -531 256 72"
+    frame = "417 -539 256 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -1459,7 +1471,7 @@ module Arithmetic {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "243 60 475 464"
+        geometry = "251 36 475 464"
         sizeHint = "475 464"
         wasOpen = no
       }
@@ -1472,7 +1484,7 @@ module Arithmetic {
   }
   fields  {
     instanceName = Arithmetic1
-    expression = (a+b+c+d+e)
+    expression = (a+b+c+d+e)/5
     i1 = 0
     i2 = 0
     i3 = 0
@@ -1494,8 +1506,8 @@ module Arithmetic {
     minValue = 0
     maxValue = 1
     setMinMaxValues = FALSE
-    dataType = int8
-    setDataType = FALSE
+    dataType = float
+    setDataType = TRUE
     updateMode = AutoUpdate
     applyMode = AutoApply
     domainErrorHandling = ErrorMessage
@@ -1506,15 +1518,22 @@ module Arithmetic {
 }
 module View2D {
   internal  {
-    frame = "253 -707 120 56"
+    frame = "429 -691 120 56"
     moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "280 92 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = View2D1
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 181
+    startSlice = 178
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -1558,6 +1577,53 @@ module View2D {
     useRelativeLUTIfNoInputImage = TRUE
   }
 }
+module Arithmetic {
+  internal  {
+    frame = "-223 -595 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "243 60 475 464"
+        sizeHint = "475 464"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic2
+    expression = "a*100"
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = FALSE
+    dataType = int8
+    setDataType = FALSE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = ""
+    scalarVariablesComment = ""
+  }
+}
 connections  {
   View2D.inImage = Arithmetic1.output0
   VTKToMLImage.inputvtkImageData = vtkMINCImageReader.outputMINCImageReader
@@ -1567,6 +1633,9 @@ connections  {
   AddImagesExample.input1 = IntervalThreshold1.output0
   GaussSmoothing.input0 = IntervalThreshold.output0
   CalculateGradient.input0 = GaussSmoothing.output0
+  OrthoView2D.image = Arithmetic1.output0
+  OrthoView2D1.image = Arithmetic.output0
+  WEMIsoSurface.input0 = Arithmetic2.output0
   SoWEMRenderer.inWEM = WEMIsoSurface.outWEM
   SoExaminerViewer.children = SoWEMRenderer.self
   WEMSave.inWEM = WEMIsoSurface.outWEM
@@ -1609,6 +1678,7 @@ connections  {
   Arithmetic1.input3 = GaussSmoothing1.output0
   Arithmetic1.input4 = GaussSmoothing4.output0
   View2D1.inImage = Arithmetic.output0
+  Arithmetic2.input0 = Arithmetic1.output0
 }
 networkModel  {
   parentItems  {
