@@ -9,8 +9,8 @@ module vtkMINCImageReader {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "129 45 620 859"
-        sizeHint = "518 859"
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
         wasOpen = no
       }
     }
@@ -19,7 +19,7 @@ module vtkMINCImageReader {
     instanceName = vtkMINCImageReader
     rescaleRealValues = 0
     timeStep = 0
-    fileName = $(NETWORK)/_data_/subject20_crisp_v.mnc
+    fileName = $(NETWORK)/data/subject04_crisp_v.mnc
     numberOfScalarComponents = 1
     fileDimensionality = 2
     fileNameSliceOffset = 0
@@ -58,7 +58,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 181
+    startSlice = 116
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -83,8 +83,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 1
-    lutWidth = 2
+    lutCenter = 0.5
+    lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -160,9 +160,9 @@ module IntervalThreshold {
     innerType = UserDef
     upperType = UserDef
     centerWidthSet = FALSE
-    threshCenter = 2
-    threshWidth = 2
-    threshMin = 1
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
     threshMax = 3
     lowerUserValue = 0
     innerUserValue = 1
@@ -174,7 +174,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "230 -26 128 56"
+    frame = "293 -19 136 56"
     moduleGroupName = ComputeShilouette
     windows  {
       window _default {
@@ -204,7 +204,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "138 -98 136 56"
+    frame = "345 -155 144 56"
     moduleGroupName = ComputeShilouette
     windows  {
       window _default {
@@ -309,15 +309,15 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 2
-    grayCenter = 1
+    grayWidth = 1
+    grayCenter = 0.5
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-60.25 70.25 29.25"
+    worldPosition = "-0.923477172851563 -19.25 11.5357208251953"
     coloredMode = FALSE
   }
 }
@@ -327,9 +327,9 @@ module OrthoView2D {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "180 93 400 436"
-        sizeHint = "400 436"
-        wasOpen = yes
+        geometry = "248 45 400 428"
+        sizeHint = "400 428"
+        wasOpen = no
       }
     }
   }
@@ -350,15 +350,15 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 8
-    grayCenter = 4
+    grayWidth = 4
+    grayCenter = 2
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "10.25 32.25 -33.75"
+    worldPosition = "-0.923477172851563 -15.75 15.2295989990234"
     coloredMode = FALSE
   }
 }
@@ -453,7 +453,7 @@ module SoExaminerViewer {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "539 131 400 400"
+        geometry = "380 88 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -507,10 +507,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "330.709197998047 -73.6940155029297 97.8941802978516"
-    orientation = "-0.588559806346893 -0.60867828130722 -0.532079041004181 4.57219171524048"
-    nearDistance = 237.38559
-    farDistance = 456.21878
+    position = "255.237518310547 245.933837890625 -1.72625923156738"
+    orientation = "-0.313190400600433 -0.703217566013336 -0.63827657699585 3.72881674766541"
+    nearDistance = 244.12254
+    farDistance = 482.79193
     focalDistance = 370.5209
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -568,7 +568,7 @@ connections  {
   IntervalThreshold1.input0 = VTKToMLImage.output0
   AddImagesExample.input0 = IntervalThreshold.output0
   AddImagesExample.input1 = IntervalThreshold1.output0
-  GaussSmoothing.input0 = AddImagesExample.output0
+  GaussSmoothing.input0 = IntervalThreshold.output0
   CalculateGradient.input0 = GaussSmoothing.output0
   OrthoView2D.image = GaussSmoothing.output0
   OrthoView2D1.image = CalculateGradient.output0
