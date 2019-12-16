@@ -5,12 +5,12 @@ network  {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "269 141 152 56"
+    frame = "217 229 144 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "443 30 436 742"
-        sizeHint = "376 742"
+        geometry = "129 45 620 859"
+        sizeHint = "518 859"
         wasOpen = no
       }
     }
@@ -19,26 +19,26 @@ module vtkMINCImageReader {
     instanceName = vtkMINCImageReader
     rescaleRealValues = 0
     timeStep = 0
-    fileName = $(NETWORK)/data/subject04_crisp_v.mnc
+    fileName = $(NETWORK)/_data_/subject20_crisp_v.mnc
     numberOfScalarComponents = 1
     fileDimensionality = 2
     fileNameSliceOffset = 0
     fileNameSliceSpacing = 1
     swapBytes = 0
     fileLowerLeft = 0
-    dataSpacing = "1 1 1 "
-    dataOrigin = "0 0 0 "
-    dataExtent = "0 0 0 0 0 0 "
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
     filePattern = %s.%d
     memoryBufferLength = 0
-    dataScalarType = 4
+    dataScalarType = 3
     dataByteOrder = 1
     status = "Output is valid"
   }
 }
 module View2D {
   internal  {
-    frame = "125 -235 120 56"
+    frame = "141 -475 120 56"
     moduleGroupName = ""
     windows  {
       window Settings {
@@ -47,7 +47,7 @@ module View2D {
         wasOpen = no
       }
       window _default {
-        geometry = "280 92 400 400"
+        geometry = "163 109 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -104,12 +104,12 @@ module View2D {
 }
 module VTKToMLImage {
   internal  {
-    frame = "285 53 120 56"
-    moduleGroupName = ""
+    frame = "146 38 120 56"
+    moduleGroupName = ComputeShilouette
     windows  {
       window _default {
-        geometry = "290 22 401 610"
-        sizeHint = "390 665"
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
         wasOpen = no
       }
     }
@@ -144,12 +144,12 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "201 -11 128 56"
-    moduleGroupName = ""
+    frame = "66 -26 120 56"
+    moduleGroupName = ComputeShilouette
     windows  {
       window _default {
-        geometry = "315 123 331 338"
-        sizeHint = "331 338"
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
         wasOpen = no
       }
     }
@@ -174,12 +174,12 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "365 -11 136 56"
-    moduleGroupName = ""
+    frame = "230 -26 128 56"
+    moduleGroupName = ComputeShilouette
     windows  {
       window _default {
-        geometry = "94 91 331 338"
-        sizeHint = "331 338"
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
         wasOpen = no
       }
     }
@@ -204,8 +204,8 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "273 -83 144 56"
-    moduleGroupName = ""
+    frame = "138 -98 136 56"
+    moduleGroupName = ComputeShilouette
     windows  {
       window _default {
         geometry = "397 278 166 28"
@@ -221,13 +221,13 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "265 -163 160 72"
-    moduleGroupName = ""
+    frame = "130 -178 152 72"
+    moduleGroupName = ComputeShilouette
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "403 170 154 245"
-        sizeHint = "154 245"
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
         wasOpen = no
       }
     }
@@ -248,12 +248,12 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "361 -235 128 56"
-    moduleGroupName = ""
+    frame = "222 -250 128 56"
+    moduleGroupName = ComputeShilouette
     windows  {
       window _default {
-        geometry = "160 97 282 362"
-        sizeHint = "221 362"
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
         wasOpen = no
       }
     }
@@ -282,12 +282,12 @@ module CalculateGradient {
 }
 module OrthoView2D {
   internal  {
-    frame = "229 -307 120 56"
+    frame = "309 -467 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "280 78 400 428"
-        sizeHint = "400 428"
+        geometry = "92 64 400 436"
+        sizeHint = "400 436"
         wasOpen = no
       }
     }
@@ -317,19 +317,19 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "0.839286804199219 -23.5357131958008 13.75"
+    worldPosition = "-60.25 70.25 29.25"
     coloredMode = FALSE
   }
 }
 module OrthoView2D {
   internal  {
-    frame = "365 -307 120 56"
+    frame = "549 -475 120 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "280 78 400 428"
-        sizeHint = "400 428"
-        wasOpen = no
+        geometry = "180 93 400 436"
+        sizeHint = "400 436"
+        wasOpen = yes
       }
     }
   }
@@ -358,8 +358,207 @@ module OrthoView2D {
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "0.839286804199219 -24.6428527832031 13.75"
+    worldPosition = "10.25 32.25 -33.75"
     coloredMode = FALSE
+  }
+}
+module WEMIsoSurface {
+  internal  {
+    frame = "-203 -443 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "175 211 421 366"
+        sizeHint = "421 366"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMIsoSurface
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    isoMinValue = 1
+    isoMaxValue = 2000
+    useMinValue = FALSE
+    useMaxValue = TRUE
+    cellExtend = "1 1 1"
+    useWorldCoords = TRUE
+    useInterpolation = TRUE
+    useQuadrification = FALSE
+    useFaceValueList = FALSE
+    useLUTValueList = TRUE
+    useValenceThreeRemoval = TRUE
+    useZeroLengthEdgeRemoval = TRUE
+    useEdgeRemoval = FALSE
+    timePointIndex = 0
+    taskVerboseLogging = FALSE
+    useVoxelSampling = TRUE
+    voxelSampling = 1
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "-139 -555 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = SoWEMRenderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "25 -651 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "539 131 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "330.709197998047 -73.6940155029297 97.8941802978516"
+    orientation = "-0.588559806346893 -0.60867828130722 -0.532079041004181 4.57219171524048"
+    nearDistance = 237.38559
+    farDistance = 456.21878
+    focalDistance = 370.5209
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module WEMSave {
+  internal  {
+    frame = "-475 -563 120 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "361 324 557 195"
+        sizeHint = "557 195"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMSave
+    autoApply = FALSE
+    autoUpdate = FALSE
+    autoClear = TRUE
+    listenToFinishingNotifications = FALSE
+    listenToRepaintNotifications = FALSE
+    listenToSelectionChangedNotifications = FALSE
+    filename = $(NETWORK)/_data_/20_isosurface
+    fileType = "Wavefront (.obj)"
+    inWEMValid = TRUE
+    status = "Valid WEM connected"
+    shouldSaveNodeNormals = FALSE
+    shouldSaveNodeColors = FALSE
+    shouldSaveEdges = FALSE
+    shouldSaveFaceNormals = FALSE
+    shouldSavePVLs = TRUE
   }
 }
 connections  {
@@ -373,5 +572,25 @@ connections  {
   CalculateGradient.input0 = GaussSmoothing.output0
   OrthoView2D.image = GaussSmoothing.output0
   OrthoView2D1.image = CalculateGradient.output0
+  WEMIsoSurface.input0 = GaussSmoothing.output0
+  SoWEMRenderer.inWEM = WEMIsoSurface.outWEM
+  SoExaminerViewer.children = SoWEMRenderer.self
+  WEMSave.inWEM = WEMIsoSurface.outWEM
 }
-networkModel = ""
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 27
+        objectName = ComputeShilouette
+        parentUniqueId = 0
+        color  {
+          r = 140
+          g = 140
+          b = 140
+          a = 40
+        }
+      }
+    }
+  }
+}
