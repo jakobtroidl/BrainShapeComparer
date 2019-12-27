@@ -5,7 +5,7 @@ network  {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "205 217 152 56"
+    frame = "-979 221 152 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -58,7 +58,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 183
+    startSlice = 173
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -83,8 +83,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 0.5
-    lutWidth = 1
+    lutCenter = 2
+    lutWidth = 4
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -104,7 +104,7 @@ module View2D {
 }
 module VTKToMLImage {
   internal  {
-    frame = "138 26 120 56"
+    frame = "-1043 29 120 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -144,7 +144,7 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "54 -38 128 56"
+    frame = "-1127 -35 128 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -174,7 +174,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "285 -31 136 56"
+    frame = "-899 -27 136 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -204,7 +204,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "337 -167 144 56"
+    frame = "-847 -163 144 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -221,7 +221,7 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "118 -190 160 72"
+    frame = "-1063 -187 160 72"
     moduleGroupName = preprocessing_brain_06
     showNetworkPanel = true
     windows  {
@@ -248,7 +248,7 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "214 -262 128 56"
+    frame = "-967 -259 128 56"
     moduleGroupName = preprocessing_brain_06
     windows  {
       window _default {
@@ -314,15 +314,15 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1
-    grayCenter = 0.5
+    grayWidth = 4
+    grayCenter = 2
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
     valueHighPrecision = TRUE
     annoCoords = Voxel
     showCurrentPos = TRUE
-    worldPosition = "-0.25 -22.4285659790039 4.98213958740234"
+    worldPosition = "-7.62939453125e-06 -17.75 16.1530685424805"
     coloredMode = FALSE
   }
 }
@@ -575,7 +575,7 @@ module WEMSave {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "676 221 160 56"
+    frame = "-511 221 160 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -608,7 +608,7 @@ module vtkMINCImageReader {
 }
 module VTKToMLImage {
   internal  {
-    frame = "612 29 128 56"
+    frame = "-575 29 128 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -648,7 +648,7 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "528 -35 136 56"
+    frame = "-659 -35 136 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -678,7 +678,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "760 -27 136 56"
+    frame = "-427 -27 136 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -708,7 +708,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "808 -163 152 56"
+    frame = "-379 -163 152 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -725,7 +725,7 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "592 -187 168 72"
+    frame = "-595 -187 168 72"
     moduleGroupName = preprocessing_brain_18
     showNetworkPanel = true
     windows  {
@@ -752,7 +752,7 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "688 -259 136 56"
+    frame = "-499 -259 136 56"
     moduleGroupName = preprocessing_brain_18
     windows  {
       window _default {
@@ -786,7 +786,7 @@ module CalculateGradient {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "-293 217 160 56"
+    frame = "-1479 221 160 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -819,7 +819,7 @@ module vtkMINCImageReader {
 }
 module VTKToMLImage {
   internal  {
-    frame = "-357 25 128 56"
+    frame = "-1543 29 128 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -859,7 +859,7 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "-441 -39 136 56"
+    frame = "-1627 -35 136 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -889,7 +889,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "-209 -31 136 56"
+    frame = "-1395 -27 136 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -919,7 +919,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "-161 -167 152 56"
+    frame = "-1347 -163 152 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -936,7 +936,7 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "-377 -191 168 72"
+    frame = "-1563 -187 168 72"
     moduleGroupName = preprocessing_brain_05
     showNetworkPanel = true
     windows  {
@@ -963,7 +963,7 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "-171 -267 136 56"
+    frame = "-1355 -267 136 56"
     moduleGroupName = preprocessing_brain_05
     windows  {
       window _default {
@@ -997,7 +997,7 @@ module CalculateGradient {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "-782 221 160 56"
+    frame = "-1967 221 160 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1030,7 +1030,7 @@ module vtkMINCImageReader {
 }
 module VTKToMLImage {
   internal  {
-    frame = "-854 29 128 56"
+    frame = "-2039 29 128 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1070,7 +1070,7 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "-938 -35 136 56"
+    frame = "-2123 -35 136 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1100,7 +1100,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "-698 -27 136 56"
+    frame = "-1883 -27 136 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1130,7 +1130,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "-650 -163 152 56"
+    frame = "-1835 -163 152 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1147,7 +1147,7 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "-874 -187 168 72"
+    frame = "-2059 -187 168 72"
     moduleGroupName = preprocessing_brain_04
     showNetworkPanel = true
     windows  {
@@ -1174,7 +1174,7 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "-699 -275 136 56"
+    frame = "-1883 -275 136 56"
     moduleGroupName = preprocessing_brain_04
     windows  {
       window _default {
@@ -1208,7 +1208,7 @@ module CalculateGradient {
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "1154 221 160 56"
+    frame = "-31 221 160 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1241,7 +1241,7 @@ module vtkMINCImageReader {
 }
 module VTKToMLImage {
   internal  {
-    frame = "1090 29 128 56"
+    frame = "-94 29 128 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1281,7 +1281,7 @@ Max Vox Value = 11.000000"
 }
 module IntervalThreshold {
   internal  {
-    frame = "1006 -35 136 56"
+    frame = "-178 -34 136 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1311,7 +1311,7 @@ module IntervalThreshold {
 }
 module IntervalThreshold {
   internal  {
-    frame = "1238 -27 136 56"
+    frame = "53 -27 136 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1341,7 +1341,7 @@ module IntervalThreshold {
 }
 module AddImagesExample {
   internal  {
-    frame = "1286 -163 152 56"
+    frame = "101 -162 152 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1358,7 +1358,7 @@ module AddImagesExample {
 }
 module GaussSmoothing {
   internal  {
-    frame = "1070 -187 168 72"
+    frame = "-114 -186 168 72"
     moduleGroupName = preprocessing_brain_20
     showNetworkPanel = true
     windows  {
@@ -1385,7 +1385,7 @@ module GaussSmoothing {
 }
 module CalculateGradient {
   internal  {
-    frame = "1166 -259 136 56"
+    frame = "-19 -258 136 56"
     moduleGroupName = preprocessing_brain_20
     windows  {
       window _default {
@@ -1533,7 +1533,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 178
+    startSlice = 181
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -1624,8 +1624,1153 @@ module Arithmetic {
     scalarVariablesComment = ""
   }
 }
+module LUTPrimitive {
+  internal  {
+    frame = "229 -507 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "370 162 261 260"
+        sizeHint = "220 260"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = LUTPrimitive
+    shape = Gauss
+    relative = TRUE
+    center = 0.5
+    width = 1
+    edgeWidth = 0
+    baseValue = 0
+    peakValue = 1
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "301 -563 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "252 81 457 422"
+        sizeHint = "457 422"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0 0 0, 0.40047100186348 0.407842993736267 0 0, 0.498344004154205 1 0 0, 0.598351001739502 0.407842993736267 0 0, 0.999998986721039 0.000198580004507676 0.000198580004507676 0.000198580004507676, 1 0.000198580004507676 0.000198580004507676 0.000198580004507676 ]"
+    alphaPoints = "[ 0 1, 0.40047100186348 1, 0.498344004154205 1, 0.598351001739502 1, 0.999998986721039 1, 1 0.0886849984526634 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "449 229 160 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader5
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject38_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "385 37 128 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage5
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "297 -27 144 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold10
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "529 -19 144 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold11
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "581 -155 152 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample5
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "365 -179 168 72"
+    moduleGroupName = preprocessing_brain_38
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing5
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "461 -251 136 56"
+    moduleGroupName = preprocessing_brain_38
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient5
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "937 229 160 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader6
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject41_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "873 37 128 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage6
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "785 -19 144 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold12
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1017 -19 144 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold13
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "1069 -147 152 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample6
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "853 -171 168 72"
+    moduleGroupName = preprocessing_brain_41
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing6
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "949 -243 136 56"
+    moduleGroupName = preprocessing_brain_41
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient6
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "1425 237 160 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader7
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject42_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "1361 45 128 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage7
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1273 -19 144 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold14
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1505 -11 144 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold15
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "1557 -147 152 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample7
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "1341 -171 168 72"
+    moduleGroupName = preprocessing_brain_42
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing7
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "1437 -243 136 56"
+    moduleGroupName = preprocessing_brain_42
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient7
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "1913 245 160 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader8
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject43_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "1849 53 128 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage8
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1761 -11 144 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold16
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "1993 -3 144 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold17
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "2045 -139 152 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample8
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "1829 -163 168 72"
+    moduleGroupName = preprocessing_brain_43
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing8
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "1925 -235 136 56"
+    moduleGroupName = preprocessing_brain_43
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient8
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "2401 237 160 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader9
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject44_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "2345 45 128 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage9
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2257 -19 144 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold18
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "2481 -11 144 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold19
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "2533 -147 152 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample9
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "2325 -171 168 72"
+    moduleGroupName = preprocessing_brain_44
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing9
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "2413 -243 136 56"
+    moduleGroupName = preprocessing_brain_44
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient9
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module SoMLLUT {
+  internal  {
+    frame = "189 -595 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "342 269 277 47"
+        sizeHint = "277 47"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMLLUT
+    acceptExtensions = FALSE
+  }
+}
 connections  {
   View2D.inImage = Arithmetic1.output0
+  View2D.inInvPostLUT = SoLUTEditor.outInventorLUT
   VTKToMLImage.inputvtkImageData = vtkMINCImageReader.outputMINCImageReader
   IntervalThreshold.input0 = VTKToMLImage.output0
   IntervalThreshold1.input0 = VTKToMLImage.output0
@@ -1677,8 +2822,49 @@ connections  {
   Arithmetic1.input2 = GaussSmoothing.output0
   Arithmetic1.input3 = GaussSmoothing1.output0
   Arithmetic1.input4 = GaussSmoothing4.output0
+  Arithmetic1.input5 = CalculateGradient5.output0
+  Arithmetic1.input6 = CalculateGradient6.output0
+  Arithmetic1.input7 = CalculateGradient7.output0
+  Arithmetic1.input8 = CalculateGradient8.output0
+  Arithmetic1.input9 = CalculateGradient9.output0
   View2D1.inImage = Arithmetic.output0
   Arithmetic2.input0 = Arithmetic1.output0
+  VTKToMLImage5.inputvtkImageData = vtkMINCImageReader5.outputMINCImageReader
+  IntervalThreshold10.input0 = VTKToMLImage5.output0
+  IntervalThreshold11.input0 = VTKToMLImage5.output0
+  AddImagesExample5.input0 = IntervalThreshold10.output0
+  AddImagesExample5.input1 = IntervalThreshold11.output0
+  GaussSmoothing5.input0 = IntervalThreshold10.output0
+  CalculateGradient5.input0 = GaussSmoothing5.output0
+  VTKToMLImage6.inputvtkImageData = vtkMINCImageReader6.outputMINCImageReader
+  IntervalThreshold12.input0 = VTKToMLImage6.output0
+  IntervalThreshold13.input0 = VTKToMLImage6.output0
+  AddImagesExample6.input0 = IntervalThreshold12.output0
+  AddImagesExample6.input1 = IntervalThreshold13.output0
+  GaussSmoothing6.input0 = IntervalThreshold12.output0
+  CalculateGradient6.input0 = GaussSmoothing6.output0
+  VTKToMLImage7.inputvtkImageData = vtkMINCImageReader7.outputMINCImageReader
+  IntervalThreshold14.input0 = VTKToMLImage7.output0
+  IntervalThreshold15.input0 = VTKToMLImage7.output0
+  AddImagesExample7.input0 = IntervalThreshold14.output0
+  AddImagesExample7.input1 = IntervalThreshold15.output0
+  GaussSmoothing7.input0 = IntervalThreshold14.output0
+  CalculateGradient7.input0 = GaussSmoothing7.output0
+  VTKToMLImage8.inputvtkImageData = vtkMINCImageReader8.outputMINCImageReader
+  IntervalThreshold16.input0 = VTKToMLImage8.output0
+  IntervalThreshold17.input0 = VTKToMLImage8.output0
+  AddImagesExample8.input0 = IntervalThreshold16.output0
+  AddImagesExample8.input1 = IntervalThreshold17.output0
+  GaussSmoothing8.input0 = IntervalThreshold16.output0
+  CalculateGradient8.input0 = GaussSmoothing8.output0
+  VTKToMLImage9.inputvtkImageData = vtkMINCImageReader9.outputMINCImageReader
+  IntervalThreshold18.input0 = VTKToMLImage9.output0
+  IntervalThreshold19.input0 = VTKToMLImage9.output0
+  AddImagesExample9.input0 = IntervalThreshold18.output0
+  AddImagesExample9.input1 = IntervalThreshold19.output0
+  GaussSmoothing9.input0 = IntervalThreshold18.output0
+  CalculateGradient9.input0 = GaussSmoothing9.output0
+  SoMLLUT.inLUT = LUTPrimitive.outLUT
 }
 networkModel  {
   parentItems  {
@@ -1730,6 +2916,61 @@ networkModel  {
       MLABNetworkModelItem MLABNetworkModelItemGroup {
         uniqueId = 272
         objectName = preprocessing_brain_20
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 178
+        objectName = preprocessing_brain_38
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 193
+        objectName = preprocessing_brain_41
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 208
+        objectName = preprocessing_brain_42
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 223
+        objectName = preprocessing_brain_43
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 238
+        objectName = preprocessing_brain_44
         parentUniqueId = 0
         color  {
           r = 45
