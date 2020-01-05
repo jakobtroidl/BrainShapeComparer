@@ -58,7 +58,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 173
+    startSlice = 188
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -83,8 +83,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 2
-    lutWidth = 4
+    lutCenter = 0.5
+    lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -314,8 +314,8 @@ module OrthoView2D {
     enableSlicing = TRUE
     borderOn = TRUE
     borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 4
-    grayCenter = 2
+    grayWidth = 1
+    grayCenter = 0.5
     annotationOn = TRUE
     annotationSizeMode = ANNO_SHOW_DETAILED
     annotationFontSize = ANNO_SIZE_AUTO
@@ -445,14 +445,14 @@ module SoWEMRenderer {
     faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
     faceAlphaValue = 1
     faceShininessValue = 1
-    primitiveValueLists = ""
+    primitiveValueLists = LUT
     selectedPrimitiveValueList = LUT
     selectedPrimitiveValueAlphaList = LUT
     primitiveValueListValid = TRUE
     primitiveValueListAlphaValid = TRUE
     overwriteAlphaWithPVL = FALSE
     wemPatchToRender = -1
-    maxWEMPatchIndex = -1
+    maxWEMPatchIndex = 0
     cachePatches = FALSE
     sendAdjacency = FALSE
     hitModifierKey = AllModifiersMask
@@ -519,10 +519,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "9.63711166381836 263.495391845703 -15.491024017334"
-    orientation = "-0.075236588716507 -0.762174248695374 -0.642985284328461 3.18595290184021"
-    nearDistance = 165.05914
-    farDistance = 389.98199
+    position = "46.4700469970703 259.871032714844 23.8142566680908"
+    orientation = "0.10686682164669 0.710174858570099 0.695867121219635 2.96858620643616"
+    nearDistance = 167.95282
+    farDistance = 387.03601
     focalDistance = 264.28217
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -1363,15 +1363,15 @@ module GaussSmoothing {
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "945 140 205 286"
-        sizeHint = "205 286"
+        geometry = "403 170 154 245"
+        sizeHint = "154 245"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = GaussSmoothing4
-    sigma = 5
+    sigma = 6
     unit = voxel
     xDim = TRUE
     yDim = TRUE
@@ -1432,7 +1432,7 @@ module Arithmetic {
   }
   fields  {
     instanceName = Arithmetic
-    expression = a+b+c+d+e
+    expression = a+b+c+d+e+f+g+h+i+j
     i1 = 0
     i2 = 0
     i3 = 0
@@ -1484,7 +1484,7 @@ module Arithmetic {
   }
   fields  {
     instanceName = Arithmetic1
-    expression = (a+b+c+d+e)/5
+    expression = (a+b+c+d+e+f+g+h+i+j)/10
     i1 = 0
     i2 = 0
     i3 = 0
@@ -1670,9 +1670,9 @@ module SoLUTEditor {
     allowNewPoints = TRUE
     updateLutWhileDragging = TRUE
     relativeLut = FALSE
-    colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.40047100186348 0.407842993736267 0 0, 0.498344004154205 1 0 0, 0.598351001739502 0.407842993736267 0 0, 0.999998986721039 0.000198580004507676 0.000198580004507676 0.000198580004507676, 1 0.000198580004507676 0.000198580004507676 0.000198580004507676 ]"
-    alphaPoints = "[ 0 1, 0.40047100186348 1, 0.498344004154205 1, 0.598351001739502 1, 0.999998986721039 1, 1 0.0886849984526634 ]"
+    colorInterpolation = InterpolateConstant
+    colorPoints = "[ 0 0 0 0, 0.0895170792937279 0.407842993736267 0 0, 0.398115009069443 0.69803923368454 0 0, 0.607774019241333 0.407842993736267 0 0, 0.91166079044342 0.000198580004507676 0.000198580004507676 0.000198580004507676, 1 0.000198580004507676 0.000198580004507676 0.000198580004507676 ]"
+    alphaPoints = "[ 0 1, 0.0895170792937279 1, 0.398115009069443 1, 0.607774019241333 1, 0.91166079044342 1, 1 0.0886849984526634 ]"
     alphaFactor = 1
     newRangeMin = 0
     newRangeMax = 1
@@ -2768,8 +2768,356 @@ module SoMLLUT {
     acceptExtensions = FALSE
   }
 }
+module ImageSave {
+  internal  {
+    frame = "53 -811 104 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "318 84 324 417"
+        sizeHint = "324 417"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageSave
+    taskVerboseLogging = FALSE
+    filename = $(NETWORK)/_data_/brain_composite_10.dcm
+    format = DICOMTIFF
+    comment = MeVisLab
+    allowOverwrite = TRUE
+    autoFilename = FALSE
+    sourceName = ""
+    postfix = .result1
+    dicomNameUsed = TRUE
+    dicomMetaHeader = TRUE
+    dicomDerived = TRUE
+    dicomDerivedImageType = "OTHER\\MEVISLAB"
+    dicomDiscardTags = FrameSpecific
+    dicomStoreTimeInfo = None
+    dicomSetWindow = FALSE
+    dicomWindowCenter = 0
+    dicomWindowWidth = 0
+    dicomIgnoreHalfVoxelShift = FALSE
+    tiffCompression = None
+    tiffTileX = 128
+    tiffTileY = 128
+    tiffTileXAuto = TRUE
+    tiffTileYAuto = TRUE
+    tiffLinearRGB = FALSE
+    saveDicomHeaderOnly = FALSE
+    pngCompression = Default
+    pngInterlaced = FALSE
+    jpegQuality = 75
+    jpegProgressive = FALSE
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "-519 -523 192 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "288 132 385 321"
+        sizeHint = "385 321"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad
+    filename = $(NETWORK)/_data_/brain_composite_10.dcm
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module vtkImageSkeleton2D {
+  internal  {
+    frame = "-527 -867 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "366 97 258 391"
+        sizeHint = "229 391"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkImageSkeleton2D
+    prune = 6
+    numberOfIterations = 5
+    enableSMP = FALSE
+    desiredBytesPerPiece = 65536
+    splitMode = 0
+    numberOfThreads = 8
+    minimumPieceSize = "16 1 1 "
+    globalDefaultEnableSMP = FALSE
+    status = "Input is Valid and Used"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "-495 -715 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "315 123 331 338"
+        sizeHint = "331 338"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold20
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 50
+    threshWidth = 20
+    threshMin = 40
+    threshMax = 60
+    lowerUserValue = 0
+    innerUserValue = 50
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module Arithmetic {
+  internal  {
+    frame = "-471 -635 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "243 60 475 464"
+        sizeHint = "475 464"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic3
+    expression = "a*100"
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = FALSE
+    dataType = int8
+    setDataType = FALSE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = ""
+    scalarVariablesComment = ""
+  }
+}
+module MLToVTKImage {
+  internal  {
+    frame = "-515 -795 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "395 212 195 160"
+        sizeHint = "170 160"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MLToVTKImage
+    numScalarComps = 1
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    status = "Image loaded"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "-523 -939 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "290 22 401 610"
+        sizeHint = "390 665"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage10
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Vec32
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = float(10)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 50.000000"
+  }
+}
+module View2D {
+  internal  {
+    frame = "-507 -1019 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "280 92 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "373 75 229 435"
+        sizeHint = "214 435"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D2
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 186
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 25
+    lutWidth = 50
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module SynchroView2D {
+  internal  {
+    frame = "-171 -1043 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "78 92 804 400"
+        sizeHint = "804 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SynchroView2D
+    leftInventorInputOn = FALSE
+    rightInventorInputOn = FALSE
+    synchSlicing = TRUE
+    synchZooming = TRUE
+    synchTiming = TRUE
+    synchLUTs = FALSE
+    disconnectOnHide = TRUE
+    snapToCenter1 = FALSE
+    snapToCenter2 = FALSE
+    slice1 = 4
+    timepoint1 = 0
+    filterMode = FILTER_LINEAR
+    slice2 = 4
+    timepoint2 = 0
+    lut1w = 1
+    lut1c = 0.5
+    lut2w = 50
+    lut2c = 25
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderOn = FALSE
+    drawCurrentPos = FALSE
+    showCurrentPos = FALSE
+    worldPosition = "-8.59580993652344 14.0424690246582 85.9715423583984"
+    background = "0 0 0"
+  }
+}
 connections  {
-  View2D.inImage = Arithmetic1.output0
+  View2D.inImage = ImageLoad.output0
   View2D.inInvPostLUT = SoLUTEditor.outInventorLUT
   VTKToMLImage.inputvtkImageData = vtkMINCImageReader.outputMINCImageReader
   IntervalThreshold.input0 = VTKToMLImage.output0
@@ -2779,6 +3127,7 @@ connections  {
   GaussSmoothing.input0 = IntervalThreshold.output0
   CalculateGradient.input0 = GaussSmoothing.output0
   OrthoView2D.image = Arithmetic1.output0
+  OrthoView2D.inInvPostLUT = SoLUTEditor.outInventorLUT
   OrthoView2D1.image = Arithmetic.output0
   WEMIsoSurface.input0 = Arithmetic2.output0
   SoWEMRenderer.inWEM = WEMIsoSurface.outWEM
@@ -2817,18 +3166,23 @@ connections  {
   Arithmetic.input2 = CalculateGradient.output0
   Arithmetic.input3 = CalculateGradient1.output0
   Arithmetic.input4 = CalculateGradient4.output0
+  Arithmetic.input5 = CalculateGradient5.output0
+  Arithmetic.input6 = CalculateGradient6.output0
+  Arithmetic.input7 = CalculateGradient7.output0
+  Arithmetic.input8 = CalculateGradient8.output0
+  Arithmetic.input9 = CalculateGradient9.output0
   Arithmetic1.input0 = GaussSmoothing3.output0
   Arithmetic1.input1 = GaussSmoothing2.output0
   Arithmetic1.input2 = GaussSmoothing.output0
   Arithmetic1.input3 = GaussSmoothing1.output0
   Arithmetic1.input4 = GaussSmoothing4.output0
-  Arithmetic1.input5 = CalculateGradient5.output0
-  Arithmetic1.input6 = CalculateGradient6.output0
-  Arithmetic1.input7 = CalculateGradient7.output0
-  Arithmetic1.input8 = CalculateGradient8.output0
-  Arithmetic1.input9 = CalculateGradient9.output0
+  Arithmetic1.input5 = GaussSmoothing5.output0
+  Arithmetic1.input6 = GaussSmoothing6.output0
+  Arithmetic1.input7 = GaussSmoothing7.output0
+  Arithmetic1.input8 = GaussSmoothing8.output0
+  Arithmetic1.input9 = GaussSmoothing9.output0
   View2D1.inImage = Arithmetic.output0
-  Arithmetic2.input0 = Arithmetic1.output0
+  Arithmetic2.input0 = ImageLoad.output0
   VTKToMLImage5.inputvtkImageData = vtkMINCImageReader5.outputMINCImageReader
   IntervalThreshold10.input0 = VTKToMLImage5.output0
   IntervalThreshold11.input0 = VTKToMLImage5.output0
@@ -2865,6 +3219,15 @@ connections  {
   GaussSmoothing9.input0 = IntervalThreshold18.output0
   CalculateGradient9.input0 = GaussSmoothing9.output0
   SoMLLUT.inLUT = LUTPrimitive.outLUT
+  ImageSave.input0 = Arithmetic1.output0
+  vtkImageSkeleton2D.inputInputData_vtkDataObject = MLToVTKImage.outputImage
+  IntervalThreshold20.input0 = Arithmetic3.output0
+  Arithmetic3.input0 = ImageLoad.output0
+  MLToVTKImage.input0 = IntervalThreshold20.output0
+  VTKToMLImage10.inputvtkImageData = vtkImageSkeleton2D.outputImageSkeleton2D
+  View2D2.inImage = VTKToMLImage10.output0
+  SynchroView2D.inImage1 = ImageLoad.output0
+  SynchroView2D.inImage2 = IntervalThreshold20.output0
 }
 networkModel  {
   parentItems  {
