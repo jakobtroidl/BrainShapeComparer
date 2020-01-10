@@ -5,7 +5,7 @@ network  {
 }
 module ImageLoad {
   internal  {
-    frame = "176 -230 160 72"
+    frame = "409 -211 160 72"
     moduleGroupName = SumOfErrors2D
     showNetworkPanel = true
     windows  {
@@ -39,7 +39,7 @@ module ImageLoad {
 }
 module vtkImageSkeleton2D {
   internal  {
-    frame = "-717 -857 144 56"
+    frame = "-387 -849 144 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -64,7 +64,7 @@ module vtkImageSkeleton2D {
 }
 module Arithmetic {
   internal  {
-    frame = "-565 -345 96 72"
+    frame = "-235 -337 96 72"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -111,7 +111,7 @@ module Arithmetic {
 }
 module MLToVTKImage {
   internal  {
-    frame = "-705 -777 120 56"
+    frame = "-375 -769 120 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -131,7 +131,7 @@ module MLToVTKImage {
 }
 module VTKToMLImage {
   internal  {
-    frame = "-713 -937 136 56"
+    frame = "-383 -929 136 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -171,7 +171,7 @@ Max Vox Value = 50.000000"
 }
 module View2D {
   internal  {
-    frame = "-169 -881 120 56"
+    frame = "15 -923 120 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -191,7 +191,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 181
+    startSlice = 204
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -216,8 +216,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 0.504999995231628
-    lutWidth = 0.997500002384186
+    lutCenter = 0.5
+    lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -235,55 +235,9 @@ module View2D {
     useRelativeLUTIfNoInputImage = TRUE
   }
 }
-module OrthoView2D {
-  internal  {
-    frame = "508 -862 120 56"
-    moduleGroupName = SumOfErrors2D
-    windows  {
-      window _default {
-        geometry = "471 58 400 428"
-        sizeHint = "400 428"
-        wasOpen = no
-      }
-      window Settings {
-        geometry = "353 28 300 454"
-        sizeHint = "300 454"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = OrthoView2D
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    synchronizePosition = TRUE
-    layout = LAYOUT_CUBE_EQUAL
-    filterMode = FILTER_LINEAR
-    synchronizeZoom = TRUE
-    synchronizePanning = FALSE
-    useGlobalInputImage = TRUE
-    snapToCenter = FALSE
-    alternCubeLayout = FALSE
-    timePoint = 0
-    useManagedInteraction = FALSE
-    enableSlicing = TRUE
-    borderOn = TRUE
-    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1
-    grayCenter = 0.5
-    annotationOn = TRUE
-    annotationSizeMode = ANNO_SHOW_DETAILED
-    annotationFontSize = ANNO_SIZE_AUTO
-    valueHighPrecision = TRUE
-    annoCoords = Voxel
-    showCurrentPos = TRUE
-    worldPosition = "-1.375 -19.1071395874023 -39.75"
-    coloredMode = FALSE
-  }
-}
 module CalculateGradient {
   internal  {
-    frame = "-813 -433 128 56"
+    frame = "-483 -425 128 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -317,7 +271,7 @@ module CalculateGradient {
 }
 module IntervalThreshold {
   internal  {
-    frame = "-629 -497 128 56"
+    frame = "-299 -489 128 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -347,7 +301,7 @@ module IntervalThreshold {
 }
 module Threshold {
   internal  {
-    frame = "-785 -521 88 72"
+    frame = "-455 -513 88 72"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -371,7 +325,7 @@ module Threshold {
 }
 module Arithmetic {
   internal  {
-    frame = "-689 -609 88 72"
+    frame = "-359 -601 88 72"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -418,7 +372,7 @@ module Arithmetic {
 }
 module Threshold {
   internal  {
-    frame = "-693 -697 96 72"
+    frame = "-363 -689 96 72"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -552,7 +506,7 @@ module SoView2DOverlay {
     cursorShape = UNDEFINED_CURSOR
     overlayName = ""
     cacheTextures = TRUE
-    blendMode = BLEND_BLEND
+    blendMode = BLEND_ADD
     overwriteCurrentTimePoint = FALSE
     timePoint = 0
     maxTimePoint = 0
@@ -590,7 +544,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 284
+    startSlice = 119
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -730,40 +684,9 @@ module SoLUTEditor {
     useAntiAliasing = TRUE
   }
 }
-module OrthoViewOverlay {
-  internal  {
-    frame = "292 -598 168 56"
-    moduleGroupName = SumOfErrors2D
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "302 146 356 292"
-        sizeHint = "356 292"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = OrthoViewOverlay1
-    drawingOn = TRUE
-    isCheckerTiling = TRUE
-    checkerTileSize = 3
-    areCheckerTilesInverted = FALSE
-    inheritFilterMode = TRUE
-    filterMode = FILTER_LINEAR
-    blendMode = BLEND_BLEND
-    alphaFactor = 1
-    baseColor = "1 1 1"
-    useGlobalInputImage = TRUE
-    overwriteCurrentTimePoint = TRUE
-    timePoint = 0
-    maxTimePoint = 0
-    lutPrecision = VIEW2D_LUT_AUTO
-  }
-}
 module ApplyLUT {
   internal  {
-    frame = "220 -486 88 56"
+    frame = "453 -467 88 56"
     moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
@@ -796,7 +719,7 @@ module OrthoReformat3 {
 }
 module OrthoReformat3 {
   internal  {
-    frame = "192 -374 128 56"
+    frame = "425 -355 128 56"
     moduleGroupName = SumOfErrors2D
   }
   fields  {
@@ -811,7 +734,7 @@ module OrthoReformat3 {
 }
 module OrthoReformat3 {
   internal  {
-    frame = "-405 -241 128 56"
+    frame = "-75 -233 128 56"
     moduleGroupName = BoxPlotDeviation2D
   }
   fields  {
@@ -826,7 +749,7 @@ module OrthoReformat3 {
 }
 module ApplyLUT {
   internal  {
-    frame = "-357 -593 96 56"
+    frame = "-173 -635 96 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -844,7 +767,7 @@ module ApplyLUT {
 }
 module ImageLoad {
   internal  {
-    frame = "-413 -153 192 72"
+    frame = "-83 -145 192 72"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -878,7 +801,7 @@ module ImageLoad {
 }
 module SoView2DOverlay {
   internal  {
-    frame = "-184 -720 168 56"
+    frame = "-1 -763 168 56"
     moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
@@ -931,74 +854,9 @@ module SoView2DOverlay {
     areCheckerTilesInverted = FALSE
   }
 }
-module OrthoViewOverlay {
-  internal  {
-    frame = "-577 -721 168 56"
-    moduleGroupName = BoxPlotDeviation2D
-    showNetworkPanel = true
-  }
-  fields  {
-    instanceName = OrthoViewOverlay
-    drawingOn = TRUE
-    isCheckerTiling = TRUE
-    checkerTileSize = 3
-    areCheckerTilesInverted = FALSE
-    inheritFilterMode = TRUE
-    filterMode = FILTER_LINEAR
-    blendMode = BLEND_BLEND
-    alphaFactor = 1
-    baseColor = "0.333333343267441 0.666666686534882 1"
-    useGlobalInputImage = TRUE
-    overwriteCurrentTimePoint = TRUE
-    timePoint = 0
-    maxTimePoint = 0
-    lutPrecision = VIEW2D_LUT_AUTO
-  }
-}
-module OrthoView2D {
-  internal  {
-    frame = "-337 -881 120 56"
-    moduleGroupName = BoxPlotDeviation2D
-    windows  {
-      window _default {
-        geometry = "476 46 400 428"
-        sizeHint = "400 428"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = OrthoView2D1
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    synchronizePosition = TRUE
-    layout = LAYOUT_CUBE_EQUAL
-    filterMode = FILTER_LINEAR
-    synchronizeZoom = TRUE
-    synchronizePanning = FALSE
-    useGlobalInputImage = TRUE
-    snapToCenter = FALSE
-    alternCubeLayout = FALSE
-    timePoint = 0
-    useManagedInteraction = FALSE
-    enableSlicing = TRUE
-    borderOn = TRUE
-    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    grayWidth = 1
-    grayCenter = 0.5
-    annotationOn = TRUE
-    annotationSizeMode = ANNO_SHOW_DETAILED
-    annotationFontSize = ANNO_SIZE_AUTO
-    valueHighPrecision = TRUE
-    annoCoords = Voxel
-    showCurrentPos = TRUE
-    worldPosition = "-7.62939453125e-06 -22.25 12.4591903686523"
-    coloredMode = FALSE
-  }
-}
 module SoLUTEditor {
   internal  {
-    frame = "368 -318 112 56"
+    frame = "601 -299 112 56"
     moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
@@ -1047,7 +905,7 @@ module SoLUTEditor {
 }
 module SoLUTEditor {
   internal  {
-    frame = "-185 -338 112 56"
+    frame = "-5 -379 112 56"
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
@@ -1101,9 +959,6 @@ connections  {
   VTKToMLImage10.inputvtkImageData = vtkImageSkeleton2D.outputImageSkeleton2D
   View2D2.inImage = ApplyLUT1.output0
   View2D2.inInvPostLUT = SoView2DOverlay.self
-  OrthoView2D.image = Arithmetic1.output0
-  OrthoView2D.inInvPreLUT = OrthoViewOverlay1.overlay
-  OrthoView2D.inInvPostLUT = SoLUTEditor1.outInventorLUT
   CalculateGradient.input0 = Arithmetic3.output0
   IntervalThreshold.input0 = Arithmetic3.output0
   Threshold.input0 = CalculateGradient.output0
@@ -1116,7 +971,6 @@ connections  {
   View2D4.inInvPreLUT = SoView2DOverlay2.self
   View2D4.inInvPostLUT = SoLUTEditor1.outInventorLUT
   Arithmetic1.input0 = OrthoReformat3.output2
-  OrthoViewOverlay1.inImage = ApplyLUT.output0
   ApplyLUT.input0 = OrthoReformat31.output2
   ApplyLUT.inLUT = SoLUTEditor5.outLUT
   OrthoReformat3.input0 = VTKToMLImage4.output0
@@ -1125,9 +979,6 @@ connections  {
   ApplyLUT1.input0 = OrthoReformat32.output2
   ApplyLUT1.inLUT = SoLUTEditor3.outLUT
   SoView2DOverlay.image = VTKToMLImage10.output0
-  OrthoViewOverlay.inImage = VTKToMLImage10.output0
-  OrthoView2D1.image = ApplyLUT1.output0
-  OrthoView2D1.inInvPostLUT = OrthoViewOverlay.overlay
 }
 networkModel  {
   parentItems  {
