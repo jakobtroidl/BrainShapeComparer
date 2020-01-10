@@ -18,7 +18,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad
-    filename = $(NETWORK)/_data_/SumOfErrors.dcm
+    filename = ./_data_/SumOfErrors.dcm
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -191,7 +191,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 204
+    startSlice = 181
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -544,7 +544,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 119
+    startSlice = 104
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -780,7 +780,7 @@ module ImageLoad {
   }
   fields  {
     instanceName = ImageLoad1
-    filename = $(NETWORK)/_data_/brain_composite_20_smooth6.dcm
+    filename = ./_data_/brain_composite_20_smooth6.dcm
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1

@@ -19,7 +19,7 @@ module vtkMINCImageReader {
     instanceName = vtkMINCImageReader3
     rescaleRealValues = 0
     timeStep = 0
-    fileName = $(NETWORK)/_data_/subject04_crisp_v.mnc
+    fileName = ./_data_/subject04_crisp_v.mnc
     numberOfScalarComponents = 1
     fileDimensionality = 2
     fileNameSliceOffset = 0
@@ -1132,10 +1132,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.2
-    position = "1401.27075195313 -511.278137207031 563.782165527344"
-    orientation = "0.609209537506104 0.540397107601166 0.580374538898468 1.55898201465607"
-    nearDistance = 1409.3181
-    farDistance = 1801.1272
+    position = "-249.514556884766 -1510.42138671875 492.530670166016"
+    orientation = "0.712565362453461 -0.496932089328766 0.495286881923676 1.49956655502319"
+    nearDistance = 1385.5133
+    farDistance = 1777.7955
     focalDistance = 1560.8533
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -1317,7 +1317,7 @@ module SoClipBox {
     translation3 = "0 -1 0"
     translation4 = "0 0 1"
     translation5 = "0 0 -1"
-    rotation0 = "-0.157345160841942 -0.357133746147156 0.920705139636993 1.54632413387299"
+    rotation0 = "-0.157345175743103 -0.357133775949478 0.920705199241638 1.54632413387299"
     rotation1 = "0 0 -0.999999940395355 1.57079637050629"
     rotation2 = "0 0 -1 3.14159274101257"
     rotation3 = "0 0 1 0"
