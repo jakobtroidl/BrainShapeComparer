@@ -5,8 +5,8 @@ network  {
 }
 module ImageLoad {
   internal  {
-    frame = "137 -299 160 72"
-    moduleGroupName = ""
+    frame = "176 -230 160 72"
+    moduleGroupName = SumOfErrors2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -39,8 +39,8 @@ module ImageLoad {
 }
 module vtkImageSkeleton2D {
   internal  {
-    frame = "-767 -859 144 56"
-    moduleGroupName = ""
+    frame = "-717 -857 144 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "170 61 258 391"
@@ -64,8 +64,8 @@ module vtkImageSkeleton2D {
 }
 module Arithmetic {
   internal  {
-    frame = "-615 -347 96 72"
-    moduleGroupName = ""
+    frame = "-565 -345 96 72"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -111,8 +111,8 @@ module Arithmetic {
 }
 module MLToVTKImage {
   internal  {
-    frame = "-755 -779 120 56"
-    moduleGroupName = ""
+    frame = "-705 -777 120 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "395 212 195 160"
@@ -131,8 +131,8 @@ module MLToVTKImage {
 }
 module VTKToMLImage {
   internal  {
-    frame = "-763 -939 136 56"
-    moduleGroupName = ""
+    frame = "-713 -937 136 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "290 22 401 610"
@@ -171,11 +171,11 @@ Max Vox Value = 50.000000"
 }
 module View2D {
   internal  {
-    frame = "-219 -883 120 56"
-    moduleGroupName = ""
+    frame = "-169 -881 120 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
-        geometry = "332 56 400 400"
+        geometry = "871 208 584 656"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -216,8 +216,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 0.5
-    lutWidth = 1
+    lutCenter = 0.504999995231628
+    lutWidth = 0.997500002384186
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -237,8 +237,8 @@ module View2D {
 }
 module OrthoView2D {
   internal  {
-    frame = "469 -931 120 56"
-    moduleGroupName = ""
+    frame = "508 -862 120 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
         geometry = "471 58 400 428"
@@ -283,8 +283,8 @@ module OrthoView2D {
 }
 module CalculateGradient {
   internal  {
-    frame = "-863 -435 128 56"
-    moduleGroupName = ""
+    frame = "-813 -433 128 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "370 111 282 362"
@@ -317,8 +317,8 @@ module CalculateGradient {
 }
 module IntervalThreshold {
   internal  {
-    frame = "-679 -499 128 56"
-    moduleGroupName = ""
+    frame = "-629 -497 128 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "315 123 331 338"
@@ -347,8 +347,8 @@ module IntervalThreshold {
 }
 module Threshold {
   internal  {
-    frame = "-835 -523 88 72"
-    moduleGroupName = ""
+    frame = "-785 -521 88 72"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -371,8 +371,8 @@ module Threshold {
 }
 module Arithmetic {
   internal  {
-    frame = "-739 -611 88 72"
-    moduleGroupName = ""
+    frame = "-689 -609 88 72"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -418,8 +418,8 @@ module Arithmetic {
 }
 module Threshold {
   internal  {
-    frame = "-743 -699 96 72"
-    moduleGroupName = ""
+    frame = "-693 -697 96 72"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -442,8 +442,8 @@ module Threshold {
 }
 module VTKToMLImage {
   internal  {
-    frame = "769 -363 128 56"
-    moduleGroupName = ""
+    frame = "808 -294 128 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
         geometry = "290 45 529 693"
@@ -482,8 +482,8 @@ Max Vox Value = 11.000000"
 }
 module vtkMINCImageReader {
   internal  {
-    frame = "753 -283 160 56"
-    moduleGroupName = ""
+    frame = "792 -214 160 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
         geometry = "126 23 478 742"
@@ -515,8 +515,8 @@ module vtkMINCImageReader {
 }
 module SoView2DOverlay {
   internal  {
-    frame = "477 -667 168 56"
-    moduleGroupName = ""
+    frame = "516 -598 168 56"
+    moduleGroupName = SumOfErrors2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -570,11 +570,11 @@ module SoView2DOverlay {
 }
 module View2D {
   internal  {
-    frame = "613 -931 120 56"
-    moduleGroupName = ""
+    frame = "652 -862 120 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
-        geometry = "474 75 400 400"
+        geometry = "576 139 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -590,7 +590,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 154
+    startSlice = 284
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -636,8 +636,8 @@ module View2D {
 }
 module Arithmetic {
   internal  {
-    frame = "793 -579 96 72"
-    moduleGroupName = ""
+    frame = "832 -510 96 72"
+    moduleGroupName = SumOfErrors2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -683,8 +683,8 @@ module Arithmetic {
 }
 module SoLUTEditor {
   internal  {
-    frame = "657 -667 112 56"
-    moduleGroupName = ""
+    frame = "696 -598 112 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
         geometry = "252 81 457 422"
@@ -732,8 +732,8 @@ module SoLUTEditor {
 }
 module OrthoViewOverlay {
   internal  {
-    frame = "253 -667 168 56"
-    moduleGroupName = ""
+    frame = "292 -598 168 56"
+    moduleGroupName = SumOfErrors2D
     showNetworkPanel = true
     windows  {
       window _default {
@@ -763,8 +763,8 @@ module OrthoViewOverlay {
 }
 module ApplyLUT {
   internal  {
-    frame = "181 -555 88 56"
-    moduleGroupName = ""
+    frame = "220 -486 88 56"
+    moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
         geometry = "380 265 200 54"
@@ -779,59 +779,10 @@ module ApplyLUT {
     replicateSingleChannelLUT = FALSE
   }
 }
-module SoLUTEditor {
-  internal  {
-    frame = "337 -451 112 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "182 82 457 422"
-        sizeHint = "457 422"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoLUTEditor2
-    rangeMin = 0
-    rangeMax = 1
-    viewMin = 0
-    viewMax = 1
-    window = 1
-    level = 0.5
-    allowNewPoints = TRUE
-    updateLutWhileDragging = TRUE
-    relativeLut = FALSE
-    colorInterpolation = InterpolateRGB
-    colorPoints = "[ 0 0 0 0, 0.0471142530441284 0 0 0, 0.0471152514219284 1 0.968627452850342 0, 0.134275615215302 1 0.968627452850342 0, 1 1 0.0274509806185961 0 ]"
-    alphaPoints = "[ 0 0, 0.0471142530441284 0, 0.0471152514219284 0.302752286195755, 0.134275615215302 0.699999928474426, 1 1 ]"
-    alphaFactor = 1
-    newRangeMin = 0
-    newRangeMax = 1
-    newRangeMode = ClipFormerLUT
-    colorEditorHeight = 24
-    showColorEditor = TRUE
-    showAlphaEditor = TRUE
-    markerRadius = 4
-    selectedMarkerRadius = 6
-    snapMarkerRadius = 10
-    alphaLineWidth = 2
-    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
-    borderColor = "0 0 0"
-    alphaLineColor = "0 0 0"
-    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
-    drawColoredMarkers = TRUE
-    markerColor = "1 1 1"
-    selectedMarkerColor = "1 0.5 0.5"
-    selectedTriangleSize = 8
-    triangleSize = 6
-    useAntiAliasing = TRUE
-  }
-}
 module OrthoReformat3 {
   internal  {
-    frame = "773 -459 120 56"
-    moduleGroupName = ""
+    frame = "812 -390 120 56"
+    moduleGroupName = SumOfErrors2D
   }
   fields  {
     instanceName = OrthoReformat3
@@ -845,8 +796,8 @@ module OrthoReformat3 {
 }
 module OrthoReformat3 {
   internal  {
-    frame = "153 -443 128 56"
-    moduleGroupName = ""
+    frame = "192 -374 128 56"
+    moduleGroupName = SumOfErrors2D
   }
   fields  {
     instanceName = OrthoReformat31
@@ -860,8 +811,8 @@ module OrthoReformat3 {
 }
 module OrthoReformat3 {
   internal  {
-    frame = "-455 -243 128 56"
-    moduleGroupName = ""
+    frame = "-405 -241 128 56"
+    moduleGroupName = BoxPlotDeviation2D
   }
   fields  {
     instanceName = OrthoReformat32
@@ -875,8 +826,8 @@ module OrthoReformat3 {
 }
 module ApplyLUT {
   internal  {
-    frame = "-407 -595 96 56"
-    moduleGroupName = ""
+    frame = "-357 -593 96 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "380 265 200 54"
@@ -891,71 +842,22 @@ module ApplyLUT {
     replicateSingleChannelLUT = FALSE
   }
 }
-module SoLUTEditor {
-  internal  {
-    frame = "-311 -467 112 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "314 50 457 422"
-        sizeHint = "457 422"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoLUTEditor3
-    rangeMin = 0
-    rangeMax = 1
-    viewMin = 0
-    viewMax = 1
-    window = 1
-    level = 0.5
-    allowNewPoints = TRUE
-    updateLutWhileDragging = TRUE
-    relativeLut = FALSE
-    colorInterpolation = InterpolateConstant
-    colorPoints = "[ 0 0 0 0, 0.0541813895106316 0.250980406999588 0 0, 0.244994103908539 0.580392003059387 0 0, 0.494699001312256 1 0.270588248968124 0.270588248968124, 0.494700014591217 1 1 1, 0.513544976711273 1 0.270588248968124 0.270588248968124, 0.513545989990234 0.580392003059387 0 0, 0.756183743476868 0.250980406999588 0 0, 0.946996450424194 0 0 0, 1 0.207843005657196 0.207843005657196 0.207843005657196 ]"
-    alphaPoints = "[ 0 0, 0.0541813895106316 1, 0.244994103908539 1, 0.494699001312256 1, 0.494700014591217 1, 0.513544976711273 1, 0.513545989990234 1, 0.756183743476868 1, 0.946996450424194 0, 1 1 ]"
-    alphaFactor = 1
-    newRangeMin = 0
-    newRangeMax = 1
-    newRangeMode = ClipFormerLUT
-    colorEditorHeight = 24
-    showColorEditor = TRUE
-    showAlphaEditor = TRUE
-    markerRadius = 4
-    selectedMarkerRadius = 6
-    snapMarkerRadius = 10
-    alphaLineWidth = 2
-    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
-    borderColor = "0 0 0"
-    alphaLineColor = "0 0 0"
-    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
-    drawColoredMarkers = TRUE
-    markerColor = "1 1 1"
-    selectedMarkerColor = "1 0.5 0.5"
-    selectedTriangleSize = 8
-    triangleSize = 6
-    useAntiAliasing = TRUE
-  }
-}
 module ImageLoad {
   internal  {
-    frame = "-463 -155 192 72"
-    moduleGroupName = ""
+    frame = "-413 -153 192 72"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "288 132 385 321"
-        sizeHint = "385 321"
+        geometry = "816 580 577 415"
+        sizeHint = "577 415"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = ImageLoad1
-    filename = $(NETWORK)/_data_/brain_composite_20_smooth2.dcm
+    filename = $(NETWORK)/_data_/brain_composite_20_smooth6.dcm
     autoLoad = TRUE
     readRaw = FALSE
     rawX = 1
@@ -976,9 +878,16 @@ module ImageLoad {
 }
 module SoView2DOverlay {
   internal  {
-    frame = "-235 -723 168 56"
-    moduleGroupName = ""
+    frame = "-184 -720 168 56"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "233 249 539 529"
+        sizeHint = "539 529"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = SoView2DOverlay
@@ -1022,59 +931,10 @@ module SoView2DOverlay {
     areCheckerTilesInverted = FALSE
   }
 }
-module SoLUTEditor {
-  internal  {
-    frame = "-191 -467 112 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "399 68 461 422"
-        sizeHint = "461 422"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = SoLUTEditor4
-    rangeMin = 0
-    rangeMax = 1
-    viewMin = 0
-    viewMax = 1
-    window = 1
-    level = 0.5
-    allowNewPoints = TRUE
-    updateLutWhileDragging = TRUE
-    relativeLut = FALSE
-    colorInterpolation = InterpolateConstant
-    colorPoints = "[ 0 0 0 0, 0.0306243002414703 0.109803922474384 0.109803922474384 0.109803922474384, 0.0565370991826057 0.203922003507614 0.203922003507614 0.203922003507614, 0.24499399960041 0.49803900718689 0.49803900718689 0.49803900718689, 0.494699001312256 1 0.270588010549545 0.270588010549545, 0.494700014591217 1 1 1, 0.513544976711273 1 0.270588010549545 0.270588010549545, 0.513545989990234 0.49803900718689 0.49803900718689 0.49803900718689, 0.756183981895447 0.203922003507614 0.203922003507614 0.203922003507614, 0.939929008483887 0.10980399698019 0.10980399698019 0.10980399698019, 0.968198001384735 0 0 0, 1 0.207843005657196 0.207843005657196 0.207843005657196 ]"
-    alphaPoints = "[ 0 0, 0.0306243002414703 0, 0.0565370991826057 1, 0.24499399960041 1, 0.494699001312256 1, 0.494700014591217 1, 0.513544976711273 1, 0.513545989990234 1, 0.756183981895447 1, 0.939929008483887 0, 0.968198001384735 0, 1 1 ]"
-    alphaFactor = 1
-    newRangeMin = 0
-    newRangeMax = 1
-    newRangeMode = ClipFormerLUT
-    colorEditorHeight = 24
-    showColorEditor = TRUE
-    showAlphaEditor = TRUE
-    markerRadius = 4
-    selectedMarkerRadius = 6
-    snapMarkerRadius = 10
-    alphaLineWidth = 2
-    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
-    borderColor = "0 0 0"
-    alphaLineColor = "0 0 0"
-    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
-    drawColoredMarkers = TRUE
-    markerColor = "1 1 1"
-    selectedMarkerColor = "1 0.5 0.5"
-    selectedTriangleSize = 8
-    triangleSize = 6
-    useAntiAliasing = TRUE
-  }
-}
 module OrthoViewOverlay {
   internal  {
-    frame = "-627 -723 168 56"
-    moduleGroupName = ""
+    frame = "-577 -721 168 56"
+    moduleGroupName = BoxPlotDeviation2D
     showNetworkPanel = true
   }
   fields  {
@@ -1097,8 +957,8 @@ module OrthoViewOverlay {
 }
 module OrthoView2D {
   internal  {
-    frame = "-387 -883 120 56"
-    moduleGroupName = ""
+    frame = "-337 -881 120 56"
+    moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
         geometry = "476 46 400 428"
@@ -1136,6 +996,104 @@ module OrthoView2D {
     coloredMode = FALSE
   }
 }
+module SoLUTEditor {
+  internal  {
+    frame = "368 -318 112 56"
+    moduleGroupName = SumOfErrors2D
+    windows  {
+      window _default {
+        geometry = "275 223 612 592"
+        sizeHint = "612 486"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor5
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = TRUE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0.360784322023392 0.556862771511078 1, 0.0322580635547638 0.445554852485657 0.493934959173203 0.867383539676666, 0.0806451588869095 0.988235294818878 1 0, 0.143369182944298 0.991602659225464 0.737346112728119 0, 1 1 0.0823529437184334 0 ]"
+    alphaPoints = "[ 0 0, 0.0322580635547638 0, 0.0806451588869095 0.153153151273727, 0.143369182944298 0.545045018196106, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "-185 -338 112 56"
+    moduleGroupName = BoxPlotDeviation2D
+    windows  {
+      window _default {
+        geometry = "134 212 591 567"
+        sizeHint = "591 486"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor3
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateConstant
+    colorPoints = "[ 0 0.00784313958138227 0 0, 0.0399999991059303 0.192156866192818 0.23137255012989 0.447058826684952, 0.0645161271095276 0.215685993432999 0.282353013753891 0.666666984558105, 0.239999994635582 0.364706009626389 0.537254989147186 0.949020028114319, 0.439999997615814 1 1 1, 0.560000002384186 0.364706009626389 0.537254989147186 0.949020028114319, 0.759999990463257 0.215685993432999 0.282353013753891 0.666666984558105, 0.939999997615814 0.192156866192818 0.23137255012989 0.447058826684952, 0.959999978542328 0 0 0, 1 0.000244199996814132 0.000244199996814132 0.000244199996814132 ]"
+    alphaPoints = "[ 0 0, 0.0399999991059303 0.100000001490116, 0.0645161271095276 0.18095238506794, 0.239999994635582 0.5, 0.439999997615814 1, 0.560000002384186 0.5, 0.759999990463257 0.200000002980232, 0.939999997615814 0.100000001490116, 0.959999978542328 0, 1 0 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
 connections  {
   vtkImageSkeleton2D.inputInputData_vtkDataObject = MLToVTKImage.outputImage
   Arithmetic3.input0 = OrthoReformat32.output2
@@ -1160,15 +1118,42 @@ connections  {
   Arithmetic1.input0 = OrthoReformat3.output2
   OrthoViewOverlay1.inImage = ApplyLUT.output0
   ApplyLUT.input0 = OrthoReformat31.output2
-  ApplyLUT.inLUT = SoLUTEditor2.outLUT
+  ApplyLUT.inLUT = SoLUTEditor5.outLUT
   OrthoReformat3.input0 = VTKToMLImage4.output0
   OrthoReformat31.input0 = ImageLoad.output0
   OrthoReformat32.input0 = ImageLoad1.output0
   ApplyLUT1.input0 = OrthoReformat32.output2
-  ApplyLUT1.inLUT = SoLUTEditor4.outLUT
+  ApplyLUT1.inLUT = SoLUTEditor3.outLUT
   SoView2DOverlay.image = VTKToMLImage10.output0
   OrthoViewOverlay.inImage = VTKToMLImage10.output0
   OrthoView2D1.image = ApplyLUT1.output0
   OrthoView2D1.inInvPostLUT = OrthoViewOverlay.overlay
 }
-networkModel = ""
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 68
+        objectName = SumOfErrors2D
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 132
+        objectName = BoxPlotDeviation2D
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}
