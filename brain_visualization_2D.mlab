@@ -161,10 +161,10 @@ module VTKToMLImage {
     imgInfo = "# Cells       = 56428993
 # Points      = 56873096
 # Components  = 1
-Extent        = 362 x 434 x 362
+Extent        = 362 x 362 x 434
 Scalar Type   = float(10)
 Spacing       = 0.500000 x 0.500000 x 0.500000
-Origin        = -90.250000 x -126.250000 x -72.250000
+Origin        = -90.250000 x -126.250000 x 108.250000
 Min Vox Value = 0.000000
 Max Vox Value = 50.000000"
   }
@@ -175,7 +175,7 @@ module View2D {
     moduleGroupName = BoxPlotDeviation2D
     windows  {
       window _default {
-        geometry = "871 208 584 656"
+        geometry = "15 165 584 656"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -191,7 +191,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 181
+    startSlice = 295
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -216,7 +216,7 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 0.5
+    lutCenter = 0.527499973773956
     lutWidth = 1
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
@@ -528,7 +528,7 @@ module View2D {
     moduleGroupName = SumOfErrors2D
     windows  {
       window _default {
-        geometry = "576 139 400 400"
+        geometry = "809 191 532 655"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -544,7 +544,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 104
+    startSlice = 146
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -954,7 +954,7 @@ module SoLUTEditor {
 }
 connections  {
   vtkImageSkeleton2D.inputInputData_vtkDataObject = MLToVTKImage.outputImage
-  Arithmetic3.input0 = OrthoReformat32.output2
+  Arithmetic3.input0 = OrthoReformat32.output1
   MLToVTKImage.input0 = Threshold1.output0
   VTKToMLImage10.inputvtkImageData = vtkImageSkeleton2D.outputImageSkeleton2D
   View2D2.inImage = ApplyLUT1.output0
@@ -970,13 +970,13 @@ connections  {
   View2D4.inImage = Arithmetic1.output0
   View2D4.inInvPreLUT = SoView2DOverlay2.self
   View2D4.inInvPostLUT = SoLUTEditor1.outInventorLUT
-  Arithmetic1.input0 = OrthoReformat3.output2
-  ApplyLUT.input0 = OrthoReformat31.output2
+  Arithmetic1.input0 = OrthoReformat3.output1
+  ApplyLUT.input0 = OrthoReformat31.output1
   ApplyLUT.inLUT = SoLUTEditor5.outLUT
   OrthoReformat3.input0 = VTKToMLImage4.output0
   OrthoReformat31.input0 = ImageLoad.output0
   OrthoReformat32.input0 = ImageLoad1.output0
-  ApplyLUT1.input0 = OrthoReformat32.output2
+  ApplyLUT1.input0 = OrthoReformat32.output1
   ApplyLUT1.inLUT = SoLUTEditor3.outLUT
   SoView2DOverlay.image = VTKToMLImage10.output0
 }

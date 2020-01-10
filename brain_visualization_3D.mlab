@@ -19,7 +19,7 @@ module vtkMINCImageReader {
     instanceName = vtkMINCImageReader3
     rescaleRealValues = 0
     timeStep = 0
-    fileName = ./_data_/subject04_crisp_v.mnc
+    fileName = $(NETWORK)/_data_/subject04_crisp_v.mnc
     numberOfScalarComponents = 1
     fileDimensionality = 2
     fileNameSliceOffset = 0
@@ -308,7 +308,7 @@ module SoExaminerViewer {
     moduleGroupName = BoxPlotDeviation
     windows  {
       window _viewer {
-        geometry = "482 202 648 704"
+        geometry = "1053 122 648 704"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -372,11 +372,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.2
-    position = "931.636596679688 227.975219726563 421.275299072266"
-    orientation = "0.297197699546814 0.64788806438446 0.701366245746613 1.76685345172882"
-    nearDistance = 872.12256
-    farDistance = 1261.7697
-    focalDistance = 1029.172
+    position = "6.63930225372314 54.0333404541016 1552.27282714844"
+    orientation = "-0.589828014373779 -0.124680504202843 -0.797845602035522 0.0929153338074684"
+    nearDistance = 1436.8676
+    farDistance = 1634.8817
+    focalDistance = 1537.809
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -550,18 +550,18 @@ module SoClipBox {
     bottom = TRUE
     front = TRUE
     rear = TRUE
-    hideGeometry = FALSE
-    translation0 = "0.379943996667862 -0.000214331099414267 0.000430167536251247"
+    hideGeometry = TRUE
+    translation0 = "0.185175567865372 -1.42565468195244e-05 2.76267528533936e-05"
     translation1 = "-1 0 0"
-    translation2 = "0 1 0"
+    translation2 = "-6.09731387157808e-06 0.197181880474091 1.11013650894165e-05"
     translation3 = "0 -1 0"
-    translation4 = "0 0 1"
+    translation4 = "-5.50584331904247e-07 -4.21273824713353e-08 1.40226006507874"
     translation5 = "0 0 -1"
     rotation0 = "0 0 0.999999940395355 1.57079637050629"
     rotation1 = "0 0 -0.999999940395355 1.57079637050629"
-    rotation2 = "0 0 -1 3.14159274101257"
+    rotation2 = "0 0 1 3.14159274101257"
     rotation3 = "0 0 1 0"
-    rotation4 = "-0.999999940395355 0 0 1.57079601287842"
+    rotation4 = "-0.999999940395355 6.82183873882492e-38 6.82182808895659e-38 1.57079601287842"
     rotation5 = "0.999999940395355 0 0 1.57079601287842"
   }
 }
@@ -1132,10 +1132,10 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.2
-    position = "-249.514556884766 -1510.42138671875 492.530670166016"
-    orientation = "0.712565362453461 -0.496932089328766 0.495286881923676 1.49956655502319"
-    nearDistance = 1385.5133
-    farDistance = 1777.7955
+    position = "1571.95007324219 17.9831695556641 48.2812118530273"
+    orientation = "0.556973934173584 0.586240470409393 0.588304400444031 2.10280847549438"
+    nearDistance = 1474.6238
+    farDistance = 1670.3855
     focalDistance = 1560.8533
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -1310,16 +1310,16 @@ module SoClipBox {
     bottom = TRUE
     front = TRUE
     rear = TRUE
-    hideGeometry = FALSE
-    translation0 = "0.025746762752533 -1.18479556476814e-05 2.45198607444763e-05"
+    hideGeometry = TRUE
+    translation0 = "0.262668550014496 -3.59125515387859e-05 5.44935464859009e-05"
     translation1 = "-1 0 0"
-    translation2 = "0 1 0"
+    translation2 = "1.7838088751887e-05 0.238316029310226 3.35723234456964e-05"
     translation3 = "0 -1 0"
     translation4 = "0 0 1"
     translation5 = "0 0 -1"
-    rotation0 = "-0.157345175743103 -0.357133775949478 0.920705199241638 1.54632413387299"
+    rotation0 = "0 0 0.999999940395355 1.57079637050629"
     rotation1 = "0 0 -0.999999940395355 1.57079637050629"
-    rotation2 = "0 0 -1 3.14159274101257"
+    rotation2 = "0 0 1 3.14159274101257"
     rotation3 = "0 0 1 0"
     rotation4 = "-0.999999940395355 0 0 1.57079601287842"
     rotation5 = "0.999999940395355 0 0 1.57079601287842"
@@ -1687,6 +1687,67 @@ module SoLUTEditor {
     useAntiAliasing = TRUE
   }
 }
+module View2D {
+  internal  {
+    frame = "93 -1483 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "802 231 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 178
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
 connections  {
   VTKToMLImage3.inputvtkImageData = vtkMINCImageReader3.outputMINCImageReader
   IntervalThreshold6.input0 = VTKToMLImage3.output0
@@ -1708,6 +1769,7 @@ connections  {
   SoGVRVolumeRenderer6.image = CalculateGradient3.output0
   SoSeparator5.children = "SoBackground5.self SoLUTEditor6.outInventorLUT SoGVRVolumeRenderer6.self"
   View2D2.inImage = LocalImage2.outImage
+  View2D1.inImage = GaussSmoothing3.output0
 }
 networkModel  {
   parentItems  {

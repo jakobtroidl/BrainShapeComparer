@@ -222,7 +222,7 @@ module vtkMINCImageReader {
     instanceName = vtkMINCImageReader2
     rescaleRealValues = 0
     timeStep = 0
-    fileName = $(NETWORK)/_data_/subject05_crisp_v.mnc
+    fileName = C:/Users/jtroidl/Desktop/data2/subject05_crisp_v.mnc
     numberOfScalarComponents = 1
     fileDimensionality = 2
     fileNameSliceOffset = 0
@@ -236,7 +236,7 @@ module vtkMINCImageReader {
     memoryBufferLength = 0
     dataScalarType = 3
     dataByteOrder = 1
-    status = "FileName is empty"
+    status = "Output is valid"
   }
 }
 module VTKToMLImage {
@@ -267,8 +267,16 @@ module VTKToMLImage {
 0 0 0 1"
     useDirCosines = FALSE
     adaptOriginToVTKExtent = TRUE
-    status = "Invalid/open input"
-    imgInfo = "No valid vtkImageData connected"
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
   }
 }
 module IntervalThreshold {
@@ -752,7 +760,7 @@ module View3D {
     colorFactor = "1 1 1"
     camType = TRUE
     camPosition = "-8.72247791290283 3.24696826934814 -0.051226731389761"
-    camOrientation = "-0.469470411539078 0.601594090461731 0.646283328533173 3.89884400367737"
+    camOrientation = "-0.469470381736755 0.601594030857086 0.646283268928528 3.89884400367737"
     initialCameraOrientation = CAMERA_KEEP_AS_IS
     camFar = 3.6131265
     camNear = 1.6131265
@@ -4669,6 +4677,67 @@ module CalculateGradient {
     status = ""
   }
 }
+module View2D {
+  internal  {
+    frame = "-3667 -3 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "760 377 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 181
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
 connections  {
   VTKToMLImage.inputvtkImageData = vtkMINCImageReader.outputMINCImageReader
   IntervalThreshold.input0 = VTKToMLImage.output0
@@ -4871,5 +4940,6 @@ connections  {
   AddImagesExample19.input1 = IntervalThreshold39.output0
   GaussSmoothing19.input0 = IntervalThreshold38.output0
   CalculateGradient19.input0 = GaussSmoothing19.output0
+  View2D.inImage = AbsoluteDifference.output0
 }
 networkModel = ""
