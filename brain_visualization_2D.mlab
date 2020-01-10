@@ -1,0 +1,1174 @@
+// MDL v1 utf8
+mevislabVersion = 3.2
+network  {
+  watchlist = ""
+}
+module ImageLoad {
+  internal  {
+    frame = "137 -299 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "288 132 385 321"
+        sizeHint = "385 321"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad
+    filename = $(NETWORK)/_data_/SumOfErrors.dcm
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module vtkImageSkeleton2D {
+  internal  {
+    frame = "-767 -859 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "170 61 258 391"
+        sizeHint = "229 391"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkImageSkeleton2D
+    prune = 2
+    numberOfIterations = 10
+    enableSMP = FALSE
+    desiredBytesPerPiece = 65536
+    splitMode = 0
+    numberOfThreads = 8
+    minimumPieceSize = "16 1 1 "
+    globalDefaultEnableSMP = FALSE
+    status = "Input is Valid and Used"
+  }
+}
+module Arithmetic {
+  internal  {
+    frame = "-615 -347 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "243 60 475 464"
+        sizeHint = "475 464"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic3
+    expression = "a*100"
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = FALSE
+    dataType = int8
+    setDataType = FALSE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = ""
+    scalarVariablesComment = ""
+  }
+}
+module MLToVTKImage {
+  internal  {
+    frame = "-755 -779 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "395 212 195 160"
+        sizeHint = "170 160"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = MLToVTKImage
+    numScalarComps = 1
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    status = "Image loaded"
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "-763 -939 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "290 22 401 610"
+        sizeHint = "390 665"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage10
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Vec32
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = float(10)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 50.000000"
+  }
+}
+module View2D {
+  internal  {
+    frame = "-219 -883 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "332 56 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "373 75 229 435"
+        sizeHint = "214 435"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D2
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 181
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "469 -931 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "471 58 400 428"
+        sizeHint = "400 428"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "353 28 300 454"
+        sizeHint = "300 454"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 1
+    grayCenter = 0.5
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "-1.375 -19.1071395874023 -39.75"
+    coloredMode = FALSE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "-863 -435 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "370 111 282 362"
+        sizeHint = "221 362"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 1
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 0
+    enhanceWidth = 0
+    status = ""
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "-679 -499 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "315 123 331 338"
+        sizeHint = "331 338"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 50
+    threshWidth = 20
+    threshMin = 40
+    threshMax = 60
+    lowerUserValue = 0
+    innerUserValue = 50
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module Threshold {
+  internal  {
+    frame = "-835 -523 88 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "377 165 229 254"
+        sizeHint = "206 254"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 39
+    relativeThreshold = FALSE
+    comparisonOperator = Greater
+    conditionTrueWriteValue = UserDef
+    userConditionTrueValue = 50
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 0
+  }
+}
+module Arithmetic {
+  internal  {
+    frame = "-739 -611 88 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "243 60 475 464"
+        sizeHint = "475 464"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic
+    expression = a+b
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = FALSE
+    dataType = int8
+    setDataType = FALSE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = ""
+    scalarVariablesComment = ""
+  }
+}
+module Threshold {
+  internal  {
+    frame = "-743 -699 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "377 165 229 254"
+        sizeHint = "206 254"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold1
+    threshold = 49
+    relativeThreshold = FALSE
+    comparisonOperator = Greater
+    conditionTrueWriteValue = UserDef
+    userConditionTrueValue = 50
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 0
+  }
+}
+module VTKToMLImage {
+  internal  {
+    frame = "769 -363 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage4
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module vtkMINCImageReader {
+  internal  {
+    frame = "753 -283 160 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "126 23 478 742"
+        sizeHint = "376 742"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = vtkMINCImageReader4
+    rescaleRealValues = 0
+    timeStep = 0
+    fileName = $(NETWORK)/_data_/subject04_crisp_v.mnc
+    numberOfScalarComponents = 1
+    fileDimensionality = 2
+    fileNameSliceOffset = 0
+    fileNameSliceSpacing = 1
+    swapBytes = 0
+    fileLowerLeft = 0
+    dataSpacing = "0.5 0.5 0.5 "
+    dataOrigin = "-90.25 -126.25 -72.25 "
+    dataExtent = "0 361 0 433 0 361 "
+    filePattern = %s.%d
+    memoryBufferLength = 0
+    dataScalarType = 3
+    dataByteOrder = 1
+    status = "Output is valid"
+  }
+}
+module SoView2DOverlay {
+  internal  {
+    frame = "477 -667 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "84 67 353 388"
+        sizeHint = "353 388"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DOverlay2
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = TRUE
+    clipToSlice = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    overlayName = ""
+    cacheTextures = TRUE
+    blendMode = BLEND_BLEND
+    overwriteCurrentTimePoint = FALSE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    inheritFilterMode = TRUE
+    lutPrecision = VIEW2D_LUT_AUTO
+    alphaFactor = 1
+    baseColor = "1 1 1"
+    useWorldCoords = TRUE
+    applyLut = FALSE
+    isCheckerTiling = FALSE
+    checkerTileSize = 2
+    areCheckerTilesInverted = FALSE
+  }
+}
+module View2D {
+  internal  {
+    frame = "613 -931 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "474 75 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window Settings {
+        geometry = "373 75 229 435"
+        sizeHint = "214 435"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D4
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 154
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 0.5
+    lutWidth = 1
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module Arithmetic {
+  internal  {
+    frame = "793 -579 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "243 60 475 464"
+        sizeHint = "475 464"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic1
+    expression = "a / 11"
+    i1 = 0
+    i2 = 0
+    i3 = 0
+    i4 = 0
+    i5 = 0
+    i6 = 0
+    d1 = 0
+    d2 = 0
+    d3 = 0
+    d4 = 0
+    d5 = 0
+    d6 = 0
+    d7 = 0
+    d8 = 0
+    d9 = 0
+    d10 = 0
+    d11 = 0
+    d12 = 0
+    minValue = 0
+    maxValue = 1
+    setMinMaxValues = TRUE
+    dataType = float
+    setDataType = TRUE
+    updateMode = AutoUpdate
+    applyMode = AutoApply
+    domainErrorHandling = ErrorMessage
+    numberOfInputs = 2
+    expressionComment = ""
+    scalarVariablesComment = ""
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "657 -667 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "252 81 457 422"
+        sizeHint = "457 422"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor1
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0 0 0, 1 1 1 1 ]"
+    alphaPoints = "[ 0 0, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module OrthoViewOverlay {
+  internal  {
+    frame = "253 -667 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "302 146 356 292"
+        sizeHint = "356 292"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoViewOverlay1
+    drawingOn = TRUE
+    isCheckerTiling = TRUE
+    checkerTileSize = 3
+    areCheckerTilesInverted = FALSE
+    inheritFilterMode = TRUE
+    filterMode = FILTER_LINEAR
+    blendMode = BLEND_BLEND
+    alphaFactor = 1
+    baseColor = "1 1 1"
+    useGlobalInputImage = TRUE
+    overwriteCurrentTimePoint = TRUE
+    timePoint = 0
+    maxTimePoint = 0
+    lutPrecision = VIEW2D_LUT_AUTO
+  }
+}
+module ApplyLUT {
+  internal  {
+    frame = "181 -555 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "380 265 200 54"
+        sizeHint = "200 54"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ApplyLUT
+    maxEntry = 1
+    replicateSingleChannelLUT = FALSE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "337 -451 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "182 82 457 422"
+        sizeHint = "457 422"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor2
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0 0 0, 0.0471142530441284 0 0 0, 0.0471152514219284 1 0.968627452850342 0, 0.134275615215302 1 0.968627452850342 0, 1 1 0.0274509806185961 0 ]"
+    alphaPoints = "[ 0 0, 0.0471142530441284 0, 0.0471152514219284 0.302752286195755, 0.134275615215302 0.699999928474426, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "773 -459 120 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = OrthoReformat3
+    useGlobalInputImage = TRUE
+    applyModifyPatientOrientationMatrix = FALSE
+    modifyPatientOrientationMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "153 -443 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = OrthoReformat31
+    useGlobalInputImage = TRUE
+    applyModifyPatientOrientationMatrix = FALSE
+    modifyPatientOrientationMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module OrthoReformat3 {
+  internal  {
+    frame = "-455 -243 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = OrthoReformat32
+    useGlobalInputImage = TRUE
+    applyModifyPatientOrientationMatrix = FALSE
+    modifyPatientOrientationMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+  }
+}
+module ApplyLUT {
+  internal  {
+    frame = "-407 -595 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "380 265 200 54"
+        sizeHint = "200 54"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ApplyLUT1
+    maxEntry = 1
+    replicateSingleChannelLUT = FALSE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "-311 -467 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "314 50 457 422"
+        sizeHint = "457 422"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor3
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateConstant
+    colorPoints = "[ 0 0 0 0, 0.0541813895106316 0.250980406999588 0 0, 0.244994103908539 0.580392003059387 0 0, 0.494699001312256 1 0.270588248968124 0.270588248968124, 0.494700014591217 1 1 1, 0.513544976711273 1 0.270588248968124 0.270588248968124, 0.513545989990234 0.580392003059387 0 0, 0.756183743476868 0.250980406999588 0 0, 0.946996450424194 0 0 0, 1 0.207843005657196 0.207843005657196 0.207843005657196 ]"
+    alphaPoints = "[ 0 0, 0.0541813895106316 1, 0.244994103908539 1, 0.494699001312256 1, 0.494700014591217 1, 0.513544976711273 1, 0.513545989990234 1, 0.756183743476868 1, 0.946996450424194 0, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module ImageLoad {
+  internal  {
+    frame = "-463 -155 192 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "288 132 385 321"
+        sizeHint = "385 321"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ImageLoad1
+    filename = $(NETWORK)/_data_/brain_composite_20_smooth2.dcm
+    autoLoad = TRUE
+    readRaw = FALSE
+    rawX = 1
+    rawY = 1
+    rawZ = 1
+    rawC = 1
+    rawT = 1
+    rawU = 1
+    dataTypeRaw = "unsigned int8"
+    planarConfig = Contiguous
+    byteOrder = LittleEndian
+    dataOffset = 0
+    pageSizeHint = "0 0 0 0 0 0"
+    suppressErrorLog = FALSE
+    dicomIgnoreHalfVoxelShift = FALSE
+    enableCheckSumTests = FALSE
+  }
+}
+module SoView2DOverlay {
+  internal  {
+    frame = "-235 -723 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = SoView2DOverlay
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = TRUE
+    wantsKeyEvents = TRUE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = TRUE
+    clipToSlice = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    overlayName = ""
+    cacheTextures = TRUE
+    blendMode = BLEND_ADD
+    overwriteCurrentTimePoint = FALSE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    inheritFilterMode = TRUE
+    lutPrecision = VIEW2D_LUT_AUTO
+    alphaFactor = 1
+    baseColor = "1 1 1"
+    useWorldCoords = TRUE
+    applyLut = TRUE
+    isCheckerTiling = FALSE
+    checkerTileSize = 2
+    areCheckerTilesInverted = FALSE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "-191 -467 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "399 68 461 422"
+        sizeHint = "461 422"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor4
+    rangeMin = 0
+    rangeMax = 1
+    viewMin = 0
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateConstant
+    colorPoints = "[ 0 0 0 0, 0.0306243002414703 0.109803922474384 0.109803922474384 0.109803922474384, 0.0565370991826057 0.203922003507614 0.203922003507614 0.203922003507614, 0.24499399960041 0.49803900718689 0.49803900718689 0.49803900718689, 0.494699001312256 1 0.270588010549545 0.270588010549545, 0.494700014591217 1 1 1, 0.513544976711273 1 0.270588010549545 0.270588010549545, 0.513545989990234 0.49803900718689 0.49803900718689 0.49803900718689, 0.756183981895447 0.203922003507614 0.203922003507614 0.203922003507614, 0.939929008483887 0.10980399698019 0.10980399698019 0.10980399698019, 0.968198001384735 0 0 0, 1 0.207843005657196 0.207843005657196 0.207843005657196 ]"
+    alphaPoints = "[ 0 0, 0.0306243002414703 0, 0.0565370991826057 1, 0.24499399960041 1, 0.494699001312256 1, 0.494700014591217 1, 0.513544976711273 1, 0.513545989990234 1, 0.756183981895447 1, 0.939929008483887 0, 0.968198001384735 0, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module OrthoViewOverlay {
+  internal  {
+    frame = "-627 -723 168 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = OrthoViewOverlay
+    drawingOn = TRUE
+    isCheckerTiling = TRUE
+    checkerTileSize = 3
+    areCheckerTilesInverted = FALSE
+    inheritFilterMode = TRUE
+    filterMode = FILTER_LINEAR
+    blendMode = BLEND_BLEND
+    alphaFactor = 1
+    baseColor = "0.333333343267441 0.666666686534882 1"
+    useGlobalInputImage = TRUE
+    overwriteCurrentTimePoint = TRUE
+    timePoint = 0
+    maxTimePoint = 0
+    lutPrecision = VIEW2D_LUT_AUTO
+  }
+}
+module OrthoView2D {
+  internal  {
+    frame = "-387 -883 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "476 46 400 428"
+        sizeHint = "400 428"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = OrthoView2D1
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    synchronizePosition = TRUE
+    layout = LAYOUT_CUBE_EQUAL
+    filterMode = FILTER_LINEAR
+    synchronizeZoom = TRUE
+    synchronizePanning = FALSE
+    useGlobalInputImage = TRUE
+    snapToCenter = FALSE
+    alternCubeLayout = FALSE
+    timePoint = 0
+    useManagedInteraction = FALSE
+    enableSlicing = TRUE
+    borderOn = TRUE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    grayWidth = 1
+    grayCenter = 0.5
+    annotationOn = TRUE
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationFontSize = ANNO_SIZE_AUTO
+    valueHighPrecision = TRUE
+    annoCoords = Voxel
+    showCurrentPos = TRUE
+    worldPosition = "-7.62939453125e-06 -22.25 12.4591903686523"
+    coloredMode = FALSE
+  }
+}
+connections  {
+  vtkImageSkeleton2D.inputInputData_vtkDataObject = MLToVTKImage.outputImage
+  Arithmetic3.input0 = OrthoReformat32.output2
+  MLToVTKImage.input0 = Threshold1.output0
+  VTKToMLImage10.inputvtkImageData = vtkImageSkeleton2D.outputImageSkeleton2D
+  View2D2.inImage = ApplyLUT1.output0
+  View2D2.inInvPostLUT = SoView2DOverlay.self
+  OrthoView2D.image = Arithmetic1.output0
+  OrthoView2D.inInvPreLUT = OrthoViewOverlay1.overlay
+  OrthoView2D.inInvPostLUT = SoLUTEditor1.outInventorLUT
+  CalculateGradient.input0 = Arithmetic3.output0
+  IntervalThreshold.input0 = Arithmetic3.output0
+  Threshold.input0 = CalculateGradient.output0
+  Arithmetic.input0 = Threshold.output0
+  Arithmetic.input1 = IntervalThreshold.output0
+  Threshold1.input0 = Arithmetic.output0
+  VTKToMLImage4.inputvtkImageData = vtkMINCImageReader4.outputMINCImageReader
+  SoView2DOverlay2.image = ApplyLUT.output0
+  View2D4.inImage = Arithmetic1.output0
+  View2D4.inInvPreLUT = SoView2DOverlay2.self
+  View2D4.inInvPostLUT = SoLUTEditor1.outInventorLUT
+  Arithmetic1.input0 = OrthoReformat3.output2
+  OrthoViewOverlay1.inImage = ApplyLUT.output0
+  ApplyLUT.input0 = OrthoReformat31.output2
+  ApplyLUT.inLUT = SoLUTEditor2.outLUT
+  OrthoReformat3.input0 = VTKToMLImage4.output0
+  OrthoReformat31.input0 = ImageLoad.output0
+  OrthoReformat32.input0 = ImageLoad1.output0
+  ApplyLUT1.input0 = OrthoReformat32.output2
+  ApplyLUT1.inLUT = SoLUTEditor4.outLUT
+  SoView2DOverlay.image = VTKToMLImage10.output0
+  OrthoViewOverlay.inImage = VTKToMLImage10.output0
+  OrthoView2D1.image = ApplyLUT1.output0
+  OrthoView2D1.inInvPostLUT = OrthoViewOverlay.overlay
+}
+networkModel = ""
