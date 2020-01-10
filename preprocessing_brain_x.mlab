@@ -1,0 +1,192 @@
+// MDL v1 utf8
+mevislabVersion = 3.2
+network  {
+  watchlist = ""
+}
+module VTKToMLImage {
+  internal  {
+    frame = "612 29 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "290 45 529 693"
+        sizeHint = "509 748"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = VTKToMLImage1
+    convert2CompsTo = Complex
+    convert3CompsTo = Vec3
+    convert4CompsTo = Mat2
+    convert6CompsTo = Vec6
+    convert9CompsTo = Mat3
+    convert16CompsTo = Mat4
+    convert25CompsTo = Mat5
+    convert36CompsTo = Mat6
+    dirCosines = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useDirCosines = FALSE
+    adaptOriginToVTKExtent = TRUE
+    status = "Valid vtkImageData connected"
+    imgInfo = "# Cells       = 56428993
+# Points      = 56873096
+# Components  = 1
+Extent        = 362 x 434 x 362
+Scalar Type   = unsigned char(3)
+Spacing       = 0.500000 x 0.500000 x 0.500000
+Origin        = -90.250000 x -126.250000 x -72.250000
+Min Vox Value = 0.000000
+Max Vox Value = 11.000000"
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "528 -35 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "218 92 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold2
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 2.5
+    threshWidth = 1
+    threshMin = 2
+    threshMax = 3
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = TRUE
+    changedMin = 1
+    changedMax = 3
+  }
+}
+module IntervalThreshold {
+  internal  {
+    frame = "760 -27 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "549 112 437 421"
+        sizeHint = "437 421"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IntervalThreshold3
+    lowerType = UserDef
+    innerType = UserDef
+    upperType = UserDef
+    centerWidthSet = FALSE
+    threshCenter = 8
+    threshWidth = 0
+    threshMin = 8
+    threshMax = 8
+    lowerUserValue = 0
+    innerUserValue = 1
+    upperUserValue = 0
+    changeMinMax = FALSE
+    changedMin = 0
+    changedMax = 1000
+  }
+}
+module AddImagesExample {
+  internal  {
+    frame = "808 -163 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "397 278 166 28"
+        sizeHint = "166 28"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = AddImagesExample1
+    offsetVoxelValue = 0
+  }
+}
+module GaussSmoothing {
+  internal  {
+    frame = "592 -187 168 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "945 140 205 286"
+        sizeHint = "205 286"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = GaussSmoothing1
+    sigma = 5
+    unit = voxel
+    xDim = TRUE
+    yDim = TRUE
+    zDim = TRUE
+    cDim = FALSE
+    tDim = FALSE
+    uDim = FALSE
+    useApprox = TRUE
+    autoUpdate = TRUE
+  }
+}
+module CalculateGradient {
+  internal  {
+    frame = "688 -259 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "160 97 343 440"
+        sizeHint = "266 440"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = CalculateGradient1
+    x_Derivative = TRUE
+    y_Derivative = TRUE
+    z_Derivative = FALSE
+    c_Derivative = FALSE
+    t_Derivative = FALSE
+    u_Derivative = FALSE
+    c_VoxelSize = 1
+    t_VoxelSize = 1
+    u_VoxelSize = 1
+    gradientMode = Max
+    gradientType = Central
+    edgeMode = Const
+    stepWidth = 2
+    enhanceMode = None
+    estRadius = 0
+    enhanceFactor = 1.3
+    enhanceWidth = 0
+    status = ""
+  }
+}
+connections  {
+  IntervalThreshold2.input0 = VTKToMLImage1.output0
+  IntervalThreshold3.input0 = VTKToMLImage1.output0
+  AddImagesExample1.input0 = IntervalThreshold2.output0
+  AddImagesExample1.input1 = IntervalThreshold3.output0
+  GaussSmoothing1.input0 = IntervalThreshold2.output0
+  CalculateGradient1.input0 = GaussSmoothing1.output0
+}
+networkModel = ""

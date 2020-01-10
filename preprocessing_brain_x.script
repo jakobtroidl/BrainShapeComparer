@@ -1,0 +1,16 @@
+Interface  {
+  Inputs  {
+    Field baseIn0 {
+      internalName = VTKToMLImage1.inputvtkImageData
+    }
+  }
+  Outputs  {
+    Field output0 {
+      internalName = GaussSmoothing1.output0
+    }
+    Field output1 {
+      internalName = CalculateGradient1.output0
+    }
+  }
+  Parameters {}
+}
