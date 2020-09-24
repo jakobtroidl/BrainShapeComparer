@@ -1,6 +1,6 @@
 # Comparative Visualization of Brain Scans
 
-![alt text](https://github.com/jakobtroidl/MedVis1/blob/master/teaser.PNG).
+![alt text](https://github.com/jakobtroidl/MedVis1/blob/master/teaser.PNG)
 
 A visual tool to efficiently compare multiple MRI based brain scans. You can find a detailed description [here](https://github.com/jakobtroidl/MedVis1/blob/master/report.pdf).
 
