@@ -1,4 +1,6 @@
-# Comparative visualization of 20 brain scans
+# Comparative Visualization of Brain Scans
+
+
 
 ## Setup
 Make a local folder _data_ and exclude it from git.
